@@ -6,7 +6,6 @@ Citizen Participation and Open Government Application
 
 [![Build Status](https://travis-ci.org/digidemlab/consul.svg?branch=master)](https://travis-ci.org/digidemlab/consul)
 [![Code Climate](https://codeclimate.com/github/consul/consul/badges/gpa.svg)](https://codeclimate.com/github/consul/consul)
-[![Dependency Status](https://gemnasium.com/consul/consul.svg)](https://gemnasium.com/consul/consul)
 [![Coverage Status](https://coveralls.io/repos/github/consul/consul/badge.svg)](https://coveralls.io/github/consul/consul?branch=master)
 [![Crowdin](https://d322cqt584bo4o.cloudfront.net/consul/localized.svg)](https://crowdin.com/project/consul)
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
@@ -43,15 +42,15 @@ RAILS_ENV=test rake db:setup
 
 Run the app locally:
 
-```
+```bash
 bin/rails s
 ```
 
-Prerequisites for testing: install PhantomJS >= 2.1.1
+Prerequisites for testing: install ChromeDriver >= 2.33
 
 Run the tests with:
 
-```
+```bash
 bin/rspec
 ```
 
