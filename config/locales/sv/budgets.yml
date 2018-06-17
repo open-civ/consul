@@ -1,0 +1,25 @@
+sv:
+  budgets:
+    ballots:
+      show:
+        no_balloted_group_yet: "Du har inte röstat på denna grupp ännu, gå och rösta!"
+        voted_info_html: "Du kan ändra din röst på någon tid förrän i slutet av den här fasen.<br> Inget behov av att spendera alla pengar du har tillgängliga."
+        zero: Har du inte röstat i ett investeringsprojekt.
+      reasons_for_not_balloting:
+        not_selected: Omarkerade investeringsprojekt som inte stöds
+    investments:
+      form:
+        tags_label: Taggar
+      index:
+        search_form:
+          button: Sök
+          title: Sök
+      show:
+        share: Dela
+        votes: Röster
+        price: Kostnad
+    show:
+      group: Grupp
+      phase: Aktuell fas
+    results:
+      price: Kostnad
