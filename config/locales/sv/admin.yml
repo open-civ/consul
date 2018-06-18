@@ -5,7 +5,7 @@ sv:
     actions:
       actions: Åtgärder
       confirm: Är du säker?
-      confirm_hide: Bekräfta
+      confirm_hide: Confirm moderation
       hide: Göm
       hide_author: Göm författare
       restore: Återställ
@@ -13,6 +13,7 @@ sv:
       unmark_featured: Ta bort stjärnmarkering
       edit: Redigera
       configure: Inställningar
+      delete: Ta bort
     banners:
       index:
         title: Banner
@@ -40,7 +41,7 @@ sv:
         form:
           error:
             one: "det gick inte att spara detta banner"
-            other: 'det gick inte att spara detta banner'
+            other: "det gick inte att spara detta banner"
       new:
         creating: Skapa banner
     activity:
@@ -61,7 +62,7 @@ sv:
           on_users: Användare
         title: Moderatoråtgärder
         type: Typ
-        no_activity: Det finns ingen moderatoraktivitet.
+        no_activity: There are no moderators activity.
     budgets:
       index:
         title: Medborgarbudget
@@ -70,7 +71,7 @@ sv:
         filters:
           open: Öppna
           finished: Klart
-        budget_investments: Visa investeringsförslag
+        budget_investments: Hantera projekt
         table_name: Namn
         table_phase: Etapp
         table_investments: Investeringar
@@ -123,6 +124,7 @@ sv:
       winners:
         calculate: Beräkna vinnande investeringar
         calculated: Vinnare beräknas, kan det ta en minut.
+        recalculate: Omberäkna vinnarinvesteringar
     budget_phases:
       edit:
         start_date: Startdatum
@@ -170,6 +172,7 @@ sv:
         assigned_admin: Utsedd administratör
         no_admin_assigned: Ingen admin tilldelad
         no_valuators_assigned: Ingen värderingsorgan som tilldelats
+        no_valuation_groups: Inga värderingsgrupper tilldelade
         feasibility:
           feasible: "Genomförbart (%{price})"
           unfeasible: "Ej genomförbart"
@@ -181,11 +184,15 @@ sv:
         table_supports: "Stöder"
         table_admin: "Administratör"
         table_valuator: "Värderingsorgan"
+        table_valuation_group: "Värderingsgrupp"
         table_geozone: "Verksamhetsområde"
         table_feasibility: "Genomförbarhet"
         table_valuation_finished: "Val. Fin."
         table_selection: "Vald"
+        table_evaluation: "Visa till värderingsorgan"
         table_incompatible: "Oförenlig"
+        cannot_calculate_winners: Budgeten måste stå i fas "lottningsprojekt", "granskar valsedlar" eller "färdiga budgeter" för att kunna beräkna vinnarprojekt
+        see_results: "See results"
       show:
         assigned_admin: Utsedd administratör
         assigned_valuators: Ansvarig utvärderare
@@ -222,6 +229,7 @@ sv:
         documents: "Dokument"
         see_documents: "Se dokument (%{count})"
         no_documents: "Utan dokument"
+        valuator_groups: "Värderingsorgan"
       edit:
         classification: Klassificering
         compatibility: Kompatibilitet
@@ -235,6 +243,7 @@ sv:
         tags: Taggar
         tags_placeholder: "Skriv de etiketter du vill ska separeras med kommatecken ()"
         undefined: Odefinierad
+        user_groups: "Grupper"
       search_unfeasible: Sök omöjligt
     milestones:
       index:
@@ -248,9 +257,13 @@ sv:
         image: "Bild"
         show_image: "Visa bild"
         documents: "Dokument"
+      form:
+        add_language: Lägg till språk
+        remove_language: Ta bort språk
       new:
         creating: Skapa milstolpe
         date: Datum
+        description: Beskrivning
       edit:
         title: Redigera milstolpe
       create:
@@ -319,7 +332,7 @@ sv:
           enabled: Aktiverat
           process: Process
           debate_phase: Debatt fas
-          allegations_phase: Debatt fas
+          allegations_phase: Drafting phase
           proposals_phase: Förslagsfas
           start: Starta
           end: Slut
@@ -351,7 +364,7 @@ sv:
           status_planned: Planerad
         subnav:
           info: Information
-          draft_texts: Text
+          draft_texts: Drafting
           questions: Debatt
           proposals: Förslag
       proposals:
@@ -359,9 +372,6 @@ sv:
           title: Förslag
           back: Tillbaka
         form:
-          header_information: Informationsrubrik
-          header_information_description: Lämna information om förslagen. Denna text kommer att visas som en varning i förslagssektionen inuti denna process. Använda Markdown för att formatera texten.
-          header_information_placeholder: Lägg till information om förslagsrubrik
           custom_categories: Kategorier
           custom_categories_description: Kategorier som användare kan välja när de skapar förslaget.
       draft_versions:
@@ -429,8 +439,10 @@ sv:
             error: Fel
         form:
           add_option: Lägg till alternativ
-          title_placeholder: Lägga till en titel
+          title: Fråga
+          title_placeholder: Lägg till fråga
           value_placeholder: Lägg till ett stängt svar
+          question_options: "Possible answers (optional, by default open answers)"
         index:
           back: Tillbaka
           title: Frågor som är associerade till denna process
@@ -462,7 +474,7 @@ sv:
       activity: Moderator aktivitet
       admin: Administrationsmeny
       banner: Hantera fälttecken
-      poll_questions: Enkät frågor
+      poll_questions: Questions
       proposals_topics: Förslag till ämnen
       budgets: Medborgarbudgetar
       geozones: Hantera geozones
@@ -470,20 +482,74 @@ sv:
       hidden_debates: Gömda debatter
       hidden_proposals: Gömda förslag
       hidden_users: Dolda användare
+      administrators: Administratörer
+      managers: Chefer
+      moderators: Moderatorer
+      emails: Skickar iväg e-postmeddelanden
+      newsletters: Nyhetsbrev
+      emails_download: E-post Ladda ner
+      valuators: Värderingsorgan
+      poll_officers: Opinionsmän
+      polls: Omröstningar
+      poll_booths: Båslägen
+      poll_booth_assignments: Bås uppgifter
+      poll_shifts: Hantera växlingar
+      officials: Tjänstemän
+      organizations: Organisationer
+      settings: Globala inställningar
+      spending_proposals: Investeringsförslag
+      stats: Statistik
+      signature_sheets: Underskrifter
+      site_customization:
+        homepage: Hemsida
+        pages: Anpassade sidor
+        images: Anpassade bilder
+        content_blocks: Anpassade innehållsblock
+      title_moderated_content: Modererat innehåll
+      title_budgets: Budgetar
+      title_polls: Omröstningar
+      title_profiles: Profiler
+      title_settings: Inställningar
+      title_site_customization: Webbplatsens innehåll
+      legislation: Kollaborativ lagstiftning
       users: Användare
     administrators:
       index:
+        title: Administratörer
         name: Namn
         email: E-post
+        no_administrators: Det finns inga administratörer.
       administrator:
         add: Lägg till
+        delete: Ta bort
+        restricted_removal: "Tyvärr, du kan inte ta bort dig själv från administratörerna"
+      search:
+        title: "Administratörer: Användare Sök"
     moderators:
       index:
+        title: Moderatorer
         name: Namn
         email: E-post
+        no_moderators: Det finns inga moderatorer.
       moderator:
         add: Lägg till
+        delete: Ta bort
+      search:
+        title: 'Moderatorer: Användarsökning'
+    segment_recipient:
+      all_users: Alla användare
+      administrators: Administratörer
+      proposal_authors: Förslagsförfattarna
+      investment_authors: Investeringarsförfattare i den aktuella budgeten
+      feasible_and_undecided_investment_authors: "Författarna till vissa investeringar i den aktuella budgeten som inte överensstämmer med: [värderingen avslutad ogenomförbar"
+      selected_investment_authors: Författarna till utvalda investeringar i den nuvarande budgeten
+      winner_investment_authors: Författarna till utvalda investeringar i den nuvarande budgeten
+      not_supported_on_current_budget: Användare som inte har stöttat investeringar i nuvarande budget
+      invalid_recipients_segment: "Mottagaranvändarens segment är ogiltig"
     newsletters:
+      create_success: Nyhetsbrev har skapats
+      update_success: Nyhetsbrev har uppdaterats
+      send_success: Nyhetsbrev har skickats
       delete_success: Nyhetsbrev raderad
       index:
         title: Nyhetsbrev
@@ -499,6 +565,7 @@ sv:
         empty_newsletters: Det finns ingen nyhetsbrev att Visa
       new:
         title: Nytt nyhetsbrev
+        from: E-mail address that will appear as sending the newsletter
       edit:
         title: Redigera nyhetsbrev
       show:
@@ -508,7 +575,7 @@ sv:
         sent_at: Skickat vid
         subject: Ämne
         segment_recipient: Mottagare
-        from: Från
+        from: E-mail address that will appear as sending the newsletter
         body: E-post innehåll
         body_help_text: Detta är hur användarna kommer att se e-post
         send_alert: Är du säker du vill sända detta nyhetsbrev till %{n} användare?
@@ -526,6 +593,9 @@ sv:
         description: Beskrivning
         no_description: Ingen beskrivning
         no_valuators: Det finns ingen värderingsorgan.
+        valuator_groups: "Värderingsorgan"
+        group: "Grupp"
+        no_group: "Ingen grupp"
       valuator:
         add: Lägg till värderingsorgan
         delete: Ta bort
@@ -540,6 +610,30 @@ sv:
         in_evaluation_count: Utvärderas
         total_count: Totalt
         cost: Kostnad
+      form:
+        edit_title: "Värderingsorgan: Redigera värderingsman"
+        update: "Uppdatera värderingsorgan"
+        updated: "Värderingsorgan uppdaterat"
+      show:
+        description: "Beskrivning"
+        email: "E-post"
+        group: "Grupp"
+        no_description: "Utan beskrivning"
+        no_group: "Utan grupp"
+    valuator_groups:
+      index:
+        title: "Värderingsorgan"
+        new: "Skapa värderingsgrupp"
+        name: "Namn"
+        members: "Medlemmar"
+        no_groups: "Det finns ingen värderingsorgansgrupper"
+      show:
+        title: "Värderingsorgansgrupp: %{group}"
+        no_valuators: "Det finns ingen värderingsorgan som tilldelats denna grupp"
+      form:
+        name: "Grupp namn"
+        new: "Skapa värderingsorgan grupp"
+        edit: "Spara värderingsorgan grupp"
     poll_officers:
       index:
         title: Opinionsmän
@@ -580,7 +674,7 @@ sv:
         search_officer_placeholder: Sök ämbetsman
         search_officer_text: Sök efter en ämbetsman för att tilldela ett nytt skift
         select_date: "Välj dag"
-        no_voting_days: "Röstdagarna är slut"
+        no_voting_days: "Voting days ended"
         select_task: "Välj uppgift"
         table_shift: "Skift"
         table_email: "E-post"
@@ -629,8 +723,8 @@ sv:
         table_location: "Plats"
     polls:
       index:
-        title: "Lista över opinionsundersökningar"
-        no_polls: "Det finns inga opinionsundersökningar."
+        title: "List of active polls"
+        no_polls: "There are no polls coming up."
         create: "Skapa opinionsundersökning"
         name: "Namn"
         dates: "Datum"
@@ -640,15 +734,74 @@ sv:
         show_results_and_stats: "Visa resultat och statistik"
         show_results: "Visa resultat"
         show_stats: "Visa statistik"
+        results_and_stats_reminder: "Markerar dessa kryssrutor av resultat och/eller statistik för denna enkät kommer att vara allmänt tillgängliga och varje användare kommer att se dem."
+        submit_button: "Skapa opinionsundersökning"
+      edit:
+        title: "Redigera opinionsundersökning"
+        submit_button: "Uppdatera opinionsundersökning"
       show:
+        questions_tab: Frågor
+        booths_tab: Röstbås
+        officers_tab: Ämbetsmän
+        recounts_tab: Omräkningar
+        results_tab: Resultat
+        no_questions: "Det finns inga frågor till denna opinionsundersökning."
+        questions_title: "Lista med frågor"
         table_title: "Titel"
+      flash:
+        question_added: "Fråga har lagts till denna enkät"
+        error_on_question_added: "Frågan kunde inte tilldelas till denna enkät"
     questions:
+      index:
+        title: "Frågor"
+        create: "Skapa fråga"
+        no_questions: "Det finns inga frågor."
+        filter_poll: Filtrera efter enkät
+        select_poll: Välj opinionssökning
+        questions_tab: "Frågor"
+        successful_proposals_tab: "Framgångsrika förslag"
+        create_question: "Skapa fråga"
+        table_proposal: "Förslag"
+        table_question: "Fråga"
+      edit:
+        title: "Redigera frågan"
+      new:
+        title: "Skapa fråga"
+        poll_label: "Omröstning"
+      answers:
+        images:
+          add_image: "Lägg till bild"
+          save_image: "Spara bild"
       show:
+        proposal: Ursprungliga förslaget
+        author: Författare
+        question: Fråga
+        edit_question: Redigera fråga
+        valid_answers: Giltiga svar
+        add_answer: Lägg till svar
+        video_url: Extern video
         answers:
+          title: Svar
+          description: Beskrivning
+          videos: Videoklipp
+          video_list: Videolista
+          images: Bilder
+          images_list: Bilder lista
+          documents: Dokument
+          documents_list: Lista med dokument
           document_title: Titel
+          document_actions: Åtgärder
     answers:
+      new:
+        title: Nytt svar
       show:
         title: Titel
+        description: Beskrivning
+        images: Bilder
+        images_list: Bildlista
+        edit: Redigera svar
+      edit:
+        title: Redigera svar
       videos:
         index:
           title: Videoklipp
@@ -683,8 +836,8 @@ sv:
         title: "Resultat av monter"
     booths:
       index:
-        title: "Lista över montrar"
-        no_booths: "Det finns inga bås."
+        title: "List of active booths"
+        no_booths: "There are no active booths for any upcoming poll."
         add_booth: "Lägg till monter"
         name: "Namn"
         location: "Plats"
@@ -718,70 +871,381 @@ sv:
       level_0: Inte officiell
       level_1: Nivå 1
       level_2: Nivå 2
+      level_3: Nivå 3
+      level_4: Nivå 4
+      level_5: Nivå 5
+      search:
+        edit_official: Redigera offentliga kontor
+        make_official: Gör officiellt
+        title: 'Officiella positioner: användarsökning'
+        no_results: Officiella positioner hittades inte.
     organizations:
       index:
+        filter: Filtrera
         filters:
           all: Alla
+          pending: Väntande
+          rejected: Avvisade
+          verified: Verifierad
+        hidden_count_html:
+          one: Det finns också <strong>en organisation</strong> med inga användare eller med en dold användare.
+          other: Det finns också <strong>%{count} en organisationer</strong> med inga användare eller med en dold användare.
         name: Namn
         email: E-post
         phone_number: Telefon
+        responsible_name: Ansvarig
+        status: Status
+        no_organizations: Det finns inga organisationer.
+        reject: Avvisa
+        rejected: Avvisade
+        search: Sök
+        search_placeholder: Name, email or phone number
+        title: Organisationer
+        verified: Verifierad
+        verify: Kontrollera
+        pending: Väntande
+      search:
+        title: Search Organisations
+        no_results: No organizations found.
     proposals:
       index:
+        filter: Filtrera
         filters:
           all: Alla
+          with_confirmed_hide: Confirmed
+          without_confirmed_hide: Väntande
+        title: Hidden proposals
+        no_hidden_proposals: There is no hidden proposals.
+    settings:
+      flash:
+        updated: Value updated
+      index:
+        banners: Banner styles
+        banner_imgs: Banner images
+        no_banners_images: No banner images
+        no_banners_styles: No banner styles
+        title: Configuration settings
+        update_setting: Uppdatera
+        feature_flags: Funktioner
+        features:
+          enabled: "Feature enabled"
+          disabled: "Feature disabled"
+          enable: "Aktivera"
+          disable: "Inaktivera"
+        map:
+          title: Map configuration
+          help: Here you can customize the way the map is displayed to users. Drag map marker or click anywhere over the map, set desired zoom and click button "Update".
+          flash:
+            update: Map configuration updated succesfully.
+          form:
+            submit: Uppdatera
     shared:
+      booths_search:
+        button: Sök
+        placeholder: Search booth by name
+      poll_officers_search:
+        button: Sök
+        placeholder: Search poll officers
+      poll_questions_search:
+        button: Sök
+        placeholder: Search poll questions
+      proposal_search:
+        button: Sök
+        placeholder: Search proposals by title, code, description or question
+      spending_proposal_search:
+        button: Sök
+        placeholder: Search spending proposals by title or description
+      user_search:
+        button: Sök
+        placeholder: Search user by name or email
+      search_results: "Search results"
+      no_search_results: "Inga resultat."
+      actions: Åtgärder
       title: Titel
+      description: Description
+      image: Bild
+      show_image: Visa bild
+      moderated_content: "Check the content moderated by the moderators, and confirm if the moderation has been done correctly."
     spending_proposals:
       index:
+        geozone_filter_all: All zones
+        administrator_filter_all: All administrators
+        valuator_filter_all: Alla bedömare
+        tags_filter_all: Alla Taggar
         filters:
           valuation_open: Pågående
+          without_admin: Utan tilldelade admin
+          managed: Hanterade
+          valuating: Under bedömning
+          valuation_finished: Bedömning avslutad
           all: Alla
+        title: Investeringsprojekt för medborgarbudget
+        assigned_admin: Utsedd administratör
+        no_admin_assigned: Ingen admin tilldelad
+        no_valuators_assigned: Ingen värderingsorgan som tilldelats
+        summary_link: "Investeringsprojektet Sammanfattning"
+        valuator_summary_link: "Värderingsorgan Sammanfattning"
+        feasibility:
+          feasible: "Genomförbart (%{price})"
+          not_feasible: "Ej genomförbart"
+          undefined: "Odefinierad"
       show:
+        assigned_admin: Utsedd administratör
+        assigned_valuators: Tilldelade värderingsorgan
         back: Tillbaka
+        classification: Klassificering
+        heading: "Investeringsprojekt %{id}"
         edit: Redigera
+        edit_classification: Redigera klassificering
+        association_name: Förening
+        by: Av
+        sent: Skickat
+        geozone: Omfattning
+        dossier: Rapport
+        edit_dossier: Redigera rapport
         tags: Taggar
+        undefined: Odefinierad
       edit:
+        classification: Klassificering
+        assigned_valuators: Värderingsorgan
+        submit_button: Uppdatera
         tags: Taggar
+        tags_placeholder: "Skriv de etiketter du vill ska separeras med kommatecken ()"
+        undefined: Odefinierad
       summary:
+        title: Sammanfattning för investeringsprojekt
+        title_proposals_with_supports: Sammanfattning för investeringsprojekt med stöd
+        geozone_name: Omfattning
+        finished_and_feasible_count: Klar och genomförbar
+        finished_and_unfeasible_count: Klar och genomförbar
+        finished_count: Avslutat
+        in_evaluation_count: Utvärderas
         total_count: Totalt
         cost_for_geozone: Kostnad
     geozones:
       index:
+        title: Distrikt
+        create: Skapa distrikt
         edit: Redigera
+        delete: Ta bort
       geozone:
         name: Namn
+        external_code: Extern kod
+        census_code: Folkräkningskod
+        coordinates: Koordinater
+      errors:
+        form:
+          error:
+            one: "fel förhindrade att detta distrikt kunde sparas"
+            other: 'fel förhindrade att detta distrikt kunde sparas'
+      edit:
+        form:
+          submit_button: Spara ändringar
+        editing: Redigerar distrikt
+        back: Gå tillbaka
+      new:
+        back: Gå tillbaka
+        creating: Skapa distrikt
+      delete:
+        success: Distriktsområde har tagits bort
+        error: Detta område kan inte raderas eftersom det finns element fäst vid den
     signature_sheets:
+      author: Författare
+      created_at: Skapningsdatum
       name: Namn
-    stats:
-      direct_messages:
-        total: Totalt
-      proposal_notifications:
-        total: Totalt
-    tags:
+      no_signature_sheets: "Det finns inga signatur_blanketter"
       index:
+        title: Signatur ark
+        new: Nya underskriftspapper
+      new:
+        title: Nya underskriftspapper
+        document_numbers_note: "Skriv de siffror separerade av kommatecken ()"
+        submit: Skapa signatur ark
+      show:
+        created_at: Skapad
+        author: Författare
+        documents: Dokument
+        document_count: "Antal dokument:"
+        verified:
+          one: "Det finns %{count} giltiga signaturer"
+          other: "Det finns %{count} giltiga signaturer"
+        unverified:
+          one: "Det finns %{count} ogiltiga signaturer"
+          other: "Det finns %{count} ogiltiga signaturer"
+        unverified_error: (Inte verifierad av folkräkningen)
+        loading: "Det finns fortfarande signaturer som kontrolleras av folkräkningen, vänligen uppdatera sidan om en stund"
+    stats:
+      show:
+        stats_title: Statistik
+        summary:
+          comment_votes: Kommentarsröster
+          comments: Kommentarer
+          debate_votes: Debatt röster
+          debates: Debatter
+          proposal_votes: Förslagsröster
+          proposals: Förslag
+          budgets: Öppna budgetar
+          budget_investments: Investeringsprojekt
+          spending_proposals: Förslag på utgifter
+          unverified_users: Overifierade användare
+          user_level_three: Nivå tre användare
+          user_level_two: Nivå två användare
+          users: Totalt antal användare
+          verified_users: Verifierade användare
+          verified_users_who_didnt_vote_proposals: Verifierade användare som inte röstade för något förslag
+          visits: Besök
+          votes: Totalt antal röster
+        spending_proposals_title: Förslag på utgifter
+        budgets_title: Medborgarbudget
+        visits_title: Besök
+        direct_messages: Direktmeddelanden
+        proposal_notifications: Förslagsnotifikationer
+        incomplete_verifications: Ofullständiga verifieringar
+        polls: Omröstningar
+      direct_messages:
+        title: Direktmeddelanden
+        total: Totalt
+        users_who_have_sent_message: Användare som har skickat privata meddelanden
+      proposal_notifications:
+        title: Förslagsnotifikationer
+        total: Totalt
+        proposals_with_notifications: Förslag med notifikationer
+      polls:
+        title: Opinionsundersökningsstatistik
+        all: Omröstningar
+        web_participants: Webbdeltagare
+        total_participants: Totalt antal deltagare
+        poll_questions: "Frågor från Enkät: %{poll}"
+        table:
+          poll_name: Omröstning
+          question_name: Fråga
+          origin_web: Webbdeltagare
+          origin_total: Totalt antal deltagare
+    tags:
+      create: Skapa ämne
+      destroy: Förstör ämne
+      index:
+        add_tag: Lägg till ett nytt förslag till ämne
+        title: Ämnesförslag
         topic: Ämne
+        help: "When a user creates a proposal, the following topics are suggested as default tags."
+      name:
+        placeholder: Skriv namnet på ämnet
     users:
       columns:
         name: Namn
         email: E-post
+        document_number: Dokumentnummer
         roles: Roller
+        verification_level: Kontroll nivå
       index:
         title: Användare
+        no_users: Det finns inga användare.
+      search:
+        placeholder: Sök användare med e-postadress, namn eller dokument
+        search: Sök
+    verifications:
+      index:
+        phone_not_given: Telefon inte angiven
+        sms_code_not_confirmed: Sms-kod inte bekräftad
+        title: Ofullständiga kontroller
     site_customization:
       content_blocks:
+        information: Information about content blocks
+        about: You can create HTML content blocks to be inserted in the header or the footer of your CONSUL.
+        top_links_html: "<strong>Header blocks (top_links)</strong> are blocks of links that must have this format:"
+        footer_html: "<strong>Footer blocks</strong> can have any format and can be used to insert Javascript, CSS or custom HTML."
+        no_blocks: "There are no content blocks."
+        create:
+          notice: Innehållsblock har lyckats skapas
+          error: Innehållsblocket kunde inte skapas
+        update:
+          notice: Innehållsblock har lyckats skapas
+          error: Innehållsblocket kunde inte uppdateras
+        destroy:
+          notice: Innehållsblock har lyckats raderas
+        edit:
+          title: Redigerar innehållsblock
         errors:
           form:
             error: Fel
+        index:
+          create: Skapa nya innehållsblock
+          delete: Radera block
+          title: Innehållsblock
+        new:
+          title: Skapa nya innehållsblock
         content_block:
           body: Innehåll
           name: Namn
       images:
         index:
+          title: Anpassade bilder
+          update: Uppdatera
+          delete: Ta bort
           image: Bild
+        update:
+          notice: Bilden har med framgång uppdaterats
+          error: Bilden kunde inte uppdateras
+        destroy:
+          notice: Bilden har tagits bort
+          error: Bilden kunde inte raderas
       pages:
+        create:
+          notice: Sidan har skapats
+          error: Sidan kunde inte skapas
+        update:
+          notice: Sidan uppdaterades
+          error: Sidan kunde inte uppdateras
+        destroy:
+          notice: Sidan raderades
+        edit:
+          title: Redigerae %{page_title}
         errors:
           form:
             error: Fel
+        form:
+          options: Alternativ
+        index:
+          create: Skapa ny sida
+          delete: Ta bort sida
+          title: Anpassade sidor
+          see_page: Se sida
+        new:
+          title: Create new custom page
         page:
+          created_at: Skapad den
+          status: Status
           title: Titel
+          updated_at: Uppdaterad den
           status_draft: Utkast
+          status_published: Published
+          locale: Språk
+    homepage:
+      title: Hemsida
+      description: The active modules appear in the homepage in the same order as here.
+      header_title: Header
+      no_header: There is no header.
+      create_header: Create header
+      cards_title: Kort
+      create_card: Create card
+      no_cards: There is no cards.
+      cards:
+        title: Titel
+        description: Description
+        link_text: Link text
+        link_url: Länk-URL
+      feeds:
+        proposals: Proposals
+        debates: Debatter
+        processes: Processes
+      new:
+        header_title: Ny header
+        submit_header: Create header
+        card_title: Nytt kort
+        submit_card: Create card
+      edit:
+        header_title: Edit header
+        submit_header: Save header
+        card_title: Edit card
+        submit_card: Save card

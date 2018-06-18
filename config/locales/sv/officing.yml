@@ -5,8 +5,14 @@ sv:
     dashboard:
       index:
         title: Omröstningskontor
+        info: Here you can validate user documents and store voting results
+    menu:
+      voters: Validate document
+      total_recounts: Total recounts and results
     polls:
       final:
+        title: Polls ready for final recounting
+        no_polls: You are not officing final recounts in any active poll
         select_poll: Välj omröstning
         add_results: Lägg till resultat
     results:
@@ -20,4 +26,41 @@ sv:
         booth: "Röstbås"
         date: "Datum"
         select_booth: "Välj röstbås"
+        ballots_white: "Totally blank ballots"
+        ballots_null: "Ogiltiga röster"
+        ballots_total: "Totalt antal röster"
         submit: "Spara"
+        results_list: "Your results"
+        see_results: "Se resultat"
+      index:
+        no_results: "Inga resultat"
+        results: Resultat
+        table_answer: Svar
+        table_votes: Röster
+        table_whites: "Totally blank ballots"
+        table_nulls: "Ogiltiga röster"
+        table_total: "Totalt antal röster"
+    residence:
+      flash:
+        create: "Document verified with Census"
+        not_allowed: "You don't have officing shifts today"
+      new:
+        title: Validate document
+        document_number: "Document number (including letters)"
+        submit: Validate document
+        error_verifying_census: "The Census was unable to verify this document."
+        form_errors: prevented the verification of this document
+        no_assignments: "You don't have officing shifts today"
+    voters:
+      new:
+        title: Omröstningar
+        table_poll: Omröstning
+        table_status: Omröstningsstatus
+        table_actions: Åtgärder
+      show:
+        can_vote: Kan rösta
+        error_already_voted: Has already participated in this poll
+        submit: Confirm vote
+        success: "Vote introduced!"
+      can_vote:
+        submit_disable_with: "Wait, confirming vote..."

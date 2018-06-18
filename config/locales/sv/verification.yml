@@ -27,6 +27,7 @@ sv:
       errors:
         incorrect_code: Verifieringskoden är felaktig
       new:
+        explanation: 'For participate on final voting you can:'
         go_to_index: Se förslag
         office: Verifiera i någon %{office}
         offices: Citizen Support Offices
@@ -38,11 +39,20 @@ sv:
           success: Kod korrekt. Ditt konto är nu verifierat
     redirect_notices:
       already_verified: Ditt konto är redan verifierat
+      email_already_sent: We have already sent an email with a confirmation link. If you cannot locate the email, you can request a reissue here
     residence:
+      alert:
+        unconfirmed_residency: You have not yet confirmed your residency
+      create:
+        flash:
+          success: Residence verified
       new:
+        accept_terms_text: I accept %{terms_url} of the Census
+        accept_terms_text_title: I accept the terms and conditions of access of the Census
         date_of_birth: Födelsedatum
         document_number: Dokumentnummber
         document_number_help_title: Hjälp
+        document_number_help_text_html: '<strong>DNI</strong>: 12345678A<br> <strong>Passport</strong>: AAA000001<br> <strong>Residence card</strong>: X1234567P'
         document_type:
           passport: Pass
           residence_card: Uppehållskort
@@ -50,18 +60,52 @@ sv:
         document_type_label: Dokumenttyp
         error_not_allowed_age: Du har inte åldern som krävs för att delta
         error_not_allowed_postal_code: Du måste vara registrerad för att kunna verifieras.
+        error_verifying_census: The Census was unable to verify your information. Please confirm that your census details are correct by calling to City Council or visit one %{offices}.
         error_verifying_census_offices: Citizen Support Office
+        form_errors: prevented the verification of your residence
         postal_code: Postnummer
         postal_code_note: För att verifiera ditt konto måste du vara registrerad
         terms: villkoren för tillträde
         title: Verifiera uppehållstillstånd
         verify_residence: Verifiera uppehållstillstånd
     sms:
+      create:
+        flash:
+          success: Enter the confirmation code sent to you by text message
       edit:
+        confirmation_code: Enter the code you received on your mobile
         resend_sms_link: Klicka här för att skicka det igen
         resend_sms_text: Fick du inte en text med din bekräftelsekod?
         submit_button: Skicka
         title: Bekräfta säkerhetskod
       new:
         phone: Ange ditt mobilnummer för att ta emot koden
+        phone_format_html: "<strong><em>(Example: 612345678 or +34612345678)</em></strong>"
+        phone_note: We only use your phone to send you a code, never to contact you.
+        phone_placeholder: "Example: 612345678 or +34612345678"
         submit_button: Skicka
+        title: Send confirmation code
+      update:
+        error: Incorrect confirmation code
+        flash:
+          level_three:
+            success: Code correct. Your account is now verified
+          level_two:
+            success: Code correct
+    step_1: Residence
+    step_2: Confirmation code
+    step_3: Final verification
+    user_permission_debates: Participate on debates
+    user_permission_info: Verifing your information you'll be able to...
+    user_permission_proposal: Create new proposals
+    user_permission_support_proposal: Support proposals*
+    user_permission_votes: Participate on final voting*
+    verified_user:
+      form:
+        submit_button: Skicka koden
+      show:
+        email_title: E-post
+        explanation: We currently hold the following details on the Register; please select a method for your confirmation code to be sent.
+        phone_title: Telefonnummer
+        title: Available information
+        use_another_phone: Använda en annan telefon

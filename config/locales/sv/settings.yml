@@ -40,8 +40,16 @@ sv:
       spending_proposal_features:
         voting_allowed: Omröstning om investeringsprojekt
       legislation: Lagstiftning
+      user:
+        recommendations: Rekommendationer
+        skip_verification: Skip user verification
       community: Diskussion om förslag och investeringar
       map: Geografisk plats för förslag och investeringar
+      allow_images: Allow upload and show images
+      allow_attached_documents: Allow upload and show of attached documents
+      guides: Guides to create proposals or investment projects
+      public_stats: Offentliga statistiker
+    related_content_score_threshold: Related content score threshold
     map_latitude: Latitud
     map_longitude: Longitud
     map_zoom: Zooma

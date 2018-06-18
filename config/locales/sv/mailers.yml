@@ -3,22 +3,39 @@ sv:
     no_reply: "Det här meddelanden skickades från en e-postadress som inte accepterar svar."
     comment:
       hi: Hej
+      new_comment_by_html: There is a new comment from <b>%{commenter}</b>
       subject: Någon har kommenterat på ditt %{commentable}
       title: Ny kommentar
     config:
       manage_email_subscriptions: För att sluta få e-postmeddelanden kan du ändra dina inställningar i
     email_verification:
       click_here_to_verify: den här länken
+      instructions_2_html: This email will verify your account with <b>%{document_type} %{document_number}</b>. If these don't belong to you, please don't click on the previous link and ignore this email.
+      instructions_html: To complete the verification of your user account in the Open Government Portal, you must click %{verification_link}.
       subject: Bekräfta din e-postadress
       thanks: Tack så mycket.
       title: Bekräfta kontot via länken nedan
     reply:
       hi: Hej
+      new_reply_by_html: There is a new response from <b>%{commenter}</b> to your comment on
+      subject: Someone has responded to your comment
+      title: New response to your comment
     unfeasible_spending_proposal:
+      hi: "Dear user,"
+      new_html: "For all these, we invite you to elaborate a <strong>new proposal</strong> that ajusts to the conditions of this process. You can do it following this link: %{url}."
+      new_href: "new investment project"
+      reconsider_html: "If you believe that the rejected proposal meets the requirements to be an investment proposal, you can communicate this, within 48 hours, responding to the email address examples@consul.es. Including the code %{code} in the subject of the email."
       sincerely: "Vänliga hälsningar"
+      signatory: "DEPARTMENT OF PUBLIC PARTICIPATION"
+      sorry: "Sorry for the inconvenience and we again thank you for your invaluable participation."
+      subject: "Your investment project '%{code}' has been marked as unfeasible"
+      unfeasible_html: "From the City Council we want to thank you for your participation in the <strong>participatory budgets</strong>. We regret to inform you that your proposal <strong>'%{title}'</strong> will be excluded from this participatory process for the following reason:"
     proposal_notification_digest:
+      info: "Here are the new notifications that have been published by authors of the proposals that you have supported in %{org_name}."
+      title: "Proposal notifications in %{org_name}"
       share: Dela förslaget
       comment: Kommentera förslaget
+      unsubscribe: "If you don't want receive proposal's notification, visit %{account} and unckeck 'Receive a summary of proposal notifications'."
       unsubscribe_account: Mitt konto
     direct_message_for_receiver:
       subject: "Du har fått ett nytt meddelande"
@@ -30,9 +47,46 @@ sv:
       title_html: "Du har skickat ett meddelande till <strong>%{receiver}</strong> med innehållet:"
     user_invite:
       ignore: "Om du inte har begärt denna inbjudan oroa inte dig, du kan ignorera detta mail."
+      text: "Thank you for applying to join %{org}! In seconds you can start to decide the city you want, just fill the form below:"
       thanks: "Tack så mycket."
       title: "Välkommen till %{org}"
       button: Slutför registrering
       subject: "Inbjudan till %{org_name}"
+    budget_investment_created:
+      subject: "Thank you for creating an investment!"
+      title: "Thank you for creating an investment!"
+      intro_html: "Hi <strong>%{author}</strong>,"
+      text_html: "Thank you for creating your investment <strong>%{investment}</strong> for Participatory Budgets <strong>%{budget}</strong>."
+      follow_html: "We will inform you about how the process progresses, which you can also follow on <strong>%{link}</strong>."
+      follow_link: "Participatory Budgets"
+      sincerely: "Sincerely,"
+      signatory: "DEPARTMENT OF PUBLIC PARTICIPATION"
+      share: "Share your project"
     budget_investment_unfeasible:
+      hi: "Dear user,"
+      new_html: "For all these, we invite you to elaborate a <strong>new investment</strong> that ajusts to the conditions of this process. You can do it following this link: %{url}."
+      new_href: "new investment project"
+      reconsider_html: "If you believe that the rejected investment meets the requirements to be an investment project, you can communicate this, within 48 hours, responding to the email address examples@consul.es. Including the code %{code} in the subject of the email."
       sincerely: "Vänliga hälsningar"
+      signatory: "DEPARTMENT OF PUBLIC PARTICIPATION"
+      sorry: "Sorry for the inconvenience and we again thank you for your invaluable participation."
+      subject: "Your investment project '%{code}' has been marked as unfeasible"
+      unfeasible_html: "From the City Council we want to thank you for your participation in the <strong>participatory budgets</strong>. We regret to inform you that your investment <strong>'%{title}'</strong> will be excluded from this participatory process for the following reason:"
+    budget_investment_selected:
+      subject: "Your investment project '%{code}' has been selected"
+      hi: "Dear user,"
+      selected_html: "From the City Council we want to thank you for your participation in the <strong>participatory budgets</strong>. We would like to inform you that your investment project <strong>'%{title}'</strong> has been selected for the final voting phase that will happen from <strong>May 15th to June 30th</strong>."
+      share: "Start to get votes, share your investment project on social networks. Share is essential to make it a reality."
+      share_button: "Share your investment project"
+      thanks: "Thank you again for participating."
+      sincerely: "Sincererly"
+      signatory: "DEPARTMENT OF PUBLIC PARTICIPATION"
+    budget_investment_unselected:
+      subject: "Your investment project '%{code}' has not been selected"
+      hi: "Dear user,"
+      unselected_html: "From the City Council we want to thank you for your participation in the <strong>participatory budgets</strong>. We regret to inform you that your investment project <strong>'%{title}'</strong> has not been selected for the final voting phase."
+      participate_html: "You can continue participating in the final voting phase voting for investments projects from <strong>May 15th to June 30th</strong>."
+      participate_url: "participate in the final voting"
+      thanks: "Thank you again for participating."
+      sincerely: "Sincererly"
+      signatory: "DEPARTMENT OF PUBLIC PARTICIPATION"
