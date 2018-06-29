@@ -1,79 +1,79 @@
 sv:
   pages:
-    census_terms: To confirm the account, you must be 16 or older and be registered, having provided the information requested previously, will verify. By accepting the verification process, you also consent to the verification of this information, as well as the contact methods featuring in said files. The data provided will be acquired and processed in a file mentioned previously in the terms and conditions of use for the Portal.
+    census_terms: För att verifiera kontot måste du vara 16 år eller äldre och registrera dig med ovan angivna uppgifter, vilka kommer att granskas. Genom att godkänna verifieringsprocessen bekräftar du att information är korrekt, inklusive de kontaktuppgifter som angetts. Uppgifterna kommer att införlivas och behandlas i ett register enligt användningsvillkoren för portalen.
     conditions: Regler och villkor för användning
     general_terms: Regler och villkor
     help:
-      title: "%{org} is a platform for citizen participation"
-      subtitle: "In %{org} you can make proposals, vote in citizen consultations, propose participatory budget projects, decide on municipal regulations and open debates to exchange opinions with others."
-      guide: "This guide explains what each of the %{org} sections are for and how they work."
+      title: "%{org} är en plattform för medborgardeltagande"
+      subtitle: "På %{org} kan du lägga förslag, delta i omröstningar, ge förslag till medborgarbudgetar, besluta i lokala frågor och debattera med andra."
+      guide: "Den här guiden förklarar vad är alla avsnitt av %{org} och hur de fungerar."
       menu:
         debates: "Debatter"
         proposals: "Förslag"
-        budgets: "Participatory budgets"
+        budgets: "Medborgarbudgetar"
         polls: "Omröstningar"
-        other: "Other information of interest"
-        processes: "Processes"
+        other: "Annan information av intresse"
+        processes: "Processer"
       debates:
         title: "Debatter"
-        description: "In the %{link} section you can present and share your opinion with other people on issues of concern to you related to the city. It is also a place to generate ideas that through the other sections of %{org} lead to concrete actions by the City Council."
+        description: "I %{link}-delen kan du presentera dina åsikter och diskutera frågor som rör staden. Det är också en plats för att utveckla idéer som kan tas vidare till andra delar av %{org} och leda till konkreta åtgärder från kommunfullmäktige."
         link: "debatter"
-        feature_html: "You can open debates, comment and evaluate them with the <strong>I agree</strong> or <strong>I don't agree</strong>. For that you have to %{link}."
+        feature_html: "Du kan skriva debattinlägg och kommentera och utvärdera andras inlägg med <strong>Jag håller med</strong> eller <strong>Jag håller inte med</strong>. För att göra det behöver du %{link}."
         feature_link: "registrera i %{org}"
-        image_alt: "Buttons to rate the debates"
-        figcaption: '"I agree" and "I disagree" buttons to rate the debates.'
+        image_alt: "Knappar för att betygsätta diskussioner"
+        figcaption: '"Jag håller med" och "Jag håller inte med" knappar för att betygsätta debatter.'
       proposals:
         title: "Förslag"
-        description: "In the %{link} section you can make proposals for the City Council to carry them out. The proposals require support, and if they reach sufficient support, they are put to a public vote. The proposals approved in these citizens' votes are accepted by the City Council and carried out."
+        description: "I %{link}-delen kan du skriva förslag som du vill att kommunfullmäktige ska genomföra. Förslagen behöver få tillräckligt med stöd för att gå vidare till omröstning. De förslag som vinner en omröstningen kommer att genomföras av kommunfullmäktige."
         link: "medborgarförslag"
-        feature_html: "To create a proposal you must register in %{org}. The proposals that get the support on the website of 1% of people with the right to vote (%{supports} supports of people over 16 years old registered) go to vote. To support proposals it is necessary to verify your account."
-        image_alt: "Button to support a proposal"
-        figcaption_html: 'Button to "Support" a proposal.<br>When it reaches the number of supports will go to vote.'
+        feature_html: "För att skapa ett förslag behöver du registrera på %{org}. De förslag som får stöd av för 1% av de röstberättigade invånarna (%{supports} är för personer över 16 år och registrerade på webbplatsen) går vidare till omröstning. För att kunna stödja förslag behöver du ha ett verifierat konto."
+        image_alt: "Stöd ett förslag knapp"
+        figcaption_html: 'Knapp för att "Stödja" ett förslag.<br>När det fått tillräckligt med stöd går det vidare till omröstning.'
       budgets:
-        title: "Participatory Budgeting"
-        description: "The %{link} section helps people make a direct decision on what part of the municipal budget is spent on."
-        link: "participative budgets"
-        feature: "In this process, every year people raise, support and vote on projects. The most voted votes are financed by the municipal budget."
-        phase_1_html: "Between January and early March, people registered in %{org} can <strong>present</strong>."
-        phase_2_html: "In March, proposers have to gather support, in the form of <strong>preselection</strong>."
-        phase_3_html: "Between April and the beginning of May, the experts from the <strong>City Council rate</strong> projects on an order of more or less supported and check that they are viable."
-        phase_4_html: "Finally, between May and June, all citizens can <strong>vote</strong> projects that interest them the most."
-        phase_5_html: "From the approval of the budgets the following year the City Council begins to carry out the winning projects."
-        image_alt: "Different phases of a participatory budget"
-        figcaption_html: '"Support" and "Voting" phases of participatory budgets.'
+        title: "Medborgarbudget"
+        description: "I %{link}-delen beslutar invånarna om hur delar av stadens budget ska användas."
+        link: "medborgarbudgetar"
+        feature: "Varje år skapar, stödjer och röstar medborgarna på projekt. De projekt som fått mest stöd bekostas av stadens budget."
+        phase_1_html: "Från januari till början av mars kan alla som är registrerade på %{org} <strong>föreslå projekt</strong>."
+        phase_2_html: "Under mars månad samlar förslagslämnarna stöd i en <strong>första urvalsprocess</strong>."
+        phase_3_html: "Från april till början av maj <strong>rangordnar</strong> experter från staden projekten efter hur mycket stöd de fått, och bedömer om de är genomförbara."
+        phase_4_html: "Från maj till juni kan medborgare slutligen <strong>rösta</strong> på de projekt de gillar bäst."
+        phase_5_html: "Från det att budgeten för kommande år godkänts börjar stadsfullmäktige genomföra de vinnande projekten."
+        image_alt: "Olika faser av en medborgarbudget"
+        figcaption_html: '"Stöd" och "Omröstning" faser av en medborgarbudget.'
       polls:
         title: "Omröstningar"
-        description: "The %{link} section is activated each time a proposal reaches 1% support and goes to the vote or when the City Council proposes an issue for people to decide on."
+        description: "%{link}-delen aktiveras varje gång ett förslag får 1% stöd och går vidare till omröstning, eller när kommunfullmäktige lämnar ett förslag till omröstning."
         link: "omröstningar"
-        feature_1: "To participate in the voting you have to %{link} and verify your account."
-        feature_1_link: "register in %{org_name}"
-        feature_2: "All registered voters over the age of 16 can vote."
-        feature_3: "The results of all votes are binding on the municipal government."
+        feature_1: "För att delta i omröstningen måste du %{link} och verifiera ditt konto."
+        feature_1_link: "registrera i %{org_name}"
+        feature_2: "Alla verifierade medborgare över 16 år har möjlighet att rösta."
+        feature_3: "Resultaten av alla omröstningar är bindande för kommunfullmäktige."
       processes:
-        title: "Processes"
-        description: "In the %{link} section, citizens participate in the drafting and modification of regulations affecting the city and can give their opinion on municipal policies in previous debates."
-        link: "processes"
-        feature: "To participate in a process you have to %{sign_up} and check the %{link} page periodically to see which regulations and policies are being discussed and consulted."
-        sign_up: "sign up on %{org}"
+        title: "Processer"
+        description: "I %{link}-delen är medborgare med i processen att skriva och kommentera nya policydokument som rör staden och kan kommentera existerande dokument."
+        link: "processer"
+        feature: "För att delta i processen behöver du %{sign_up} och följa %{link}-sidan för att se vilka dokument och policies som diskuteras."
+        sign_up: "registrera dig i %{org}"
       faq:
-        title: "Technical problems?"
-        description: "Read the FAQs and solve your questions."
-        button: "View frequently asked questions"
+        title: "Tekniska problem?"
+        description: "Läs de vanliga frågorna och hitta ett svar till dina."
+        button: "Visa vanliga frågor"
         page:
           title: "Vanliga frågor"
           description: "Använd denna sida för att hjälpa dina användare med deras vanligaste frågorna."
           faq_1_title: "Fråga 1"
-          faq_1_description: "This is an example for the description of question one."
+          faq_1_description: "Detta är ett exempel på beskrivning till frågan ett."
       other:
-        title: "Other information of interest"
+        title: "Annan information av intresse"
         how_to_use: "Använd %{org_name} i din stad"
       how_to_use:
         text: |-
-          Use it in your local government or help us to improve it, it is free software.
+          Använd plattformen i din stad eller hjälp oss att förbättra den, den är fri programvara.
           
-          This Open Government Portal use the [CONSUL app](https://github.com/consul/consul 'consul github') that is free software, with [licence AGPLv3](http://www.gnu.org/licenses/agpl-3.0.html 'AGPLv3 gnu' ), that means in simple words that anyone can use the code freely, copy it, see it in detail, modify it and redistribute it to the word with the modifications he wants (allowing others to do the same). Because we think culture is better and richer when it is released.
+          Den här plattformen för Open Government använder [CONSUL](https://github.com/consul/consul 'CONSUL på GitHub'), som är fri programvara licensierad under [AGPLv3](http://www.gnu.org/licenses/agpl-3.0.html 'AGPLv3 gnu' ), vilket kortfattat betyder att vem som helst kan använda, kopiera, granska eller ändra i koden och dela den vidare under samma licens. Vi tycker att bra tjänster ska vara tillgängliga för fler.
           
-          If you are a programmer, you can see the code and help us to improve it at [CONSUL app](https://github.com/consul/consul 'consul github').
+          Om du är programmerare får du gärna hjälpa oss att förbättra koden på [CONSUL](https://github.com/consul/consul 'CONSUL på GitHub'), eller den svenska implementeringen på [Digidem Lab/CONSUL](https://github.com/digidemlab/consul 'CONSUL Sweden på GitHub').
       titles:
         how_to_use: Använd det i din lokal styrelse
     privacy: Sekretesspolicy
@@ -83,10 +83,10 @@ sv:
       help: "Vad är %{org}? - Medborgardialog"
       privacy: Sekretesspolicy
     verify:
-      code: Code you received in letter
+      code: Koden du fick i ett brev
       email: E-post
-      info: 'To verify your account introduce your access data:'
-      info_code: 'Now introduce the code you received in letter:'
+      info: 'För att verifiera ditt konto måste du skriva in dina uppgifter:'
+      info_code: 'Nu kan du skriva in koden du fick i ett brev:'
       password: Lösenord
       submit: Verifiera mitt konto
       title: Verifiera ditt konto

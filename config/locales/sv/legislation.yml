@@ -3,124 +3,124 @@ sv:
     annotations:
       comments:
         see_all: Se alla
-        see_complete: See complete
+        see_complete: Visa förklaring
         comments_count:
           one: "%{count} kommentar"
           other: "%{count} kommentarer"
         replies_count:
-          one: "%{count} reply"
-          other: "%{count} replies"
+          one: "%{count} svar"
+          other: "%{count} svar"
         cancel: Avbryt
         publish_comment: Publicera Commentar
       form:
         phase_not_open: Fasen är inte öppen
-        login_to_comment: You must %{signin} or %{signup} to leave a comment.
+        login_to_comment: Du behöver %{signin} eller %{signup} för att kunna kommentera.
         signin: Logga in
         signup: Registrera sig
       index:
         title: Kommentarer
-        comments_about: Comments about
-        see_in_context: See in context
+        comments_about: Kommentarer om
+        see_in_context: Se i sammanhang
         comments_count:
           one: "%{count} kommentar"
           other: "%{count} kommentarer"
       show:
         title: Kommentera
       version_chooser:
-        seeing_version: Commments for version
-        see_text: See text draft
+        seeing_version: Kommentarer för version
+        see_text: Se utkast
     draft_versions:
       changes:
         title: Ändringar
-        seeing_changelog_version: Revision changes summary
-        see_text: See text draft
+        seeing_changelog_version: Sammanfattning av ändringar
+        see_text: Se utkast
       show:
-        loading_comments: Loading comments
-        seeing_version: You're seeing draft version
-        select_draft_version: Select draft
+        loading_comments: Laddar kommentarer
+        seeing_version: Du visar ett utkast
+        select_draft_version: Välj utkast
         select_version_submit: se
-        updated_at: updated at %{date}
-        see_changes: see changes summary
+        updated_at: uppdaterad den %{date}
+        see_changes: visa sammanfattning av ändringar
         see_comments: Se alla kommentarer
-        text_toc: Table of contents
+        text_toc: Index
         text_body: Text
         text_comments: Kommentarer
     processes:
       header:
-        additional_info: Additional information
-        description: Description
-        more_info: More information and context
+        additional_info: Ytterligare information
+        description: Beskrivning
+        more_info: Mer information
       proposals:
-        empty_proposals: There are no proposals
+        empty_proposals: Det finns inga förslag
       debate:
-        empty_questions: There aren't any questions
-        participate: Participate in the debate
+        empty_questions: Det finns inga frågor
+        participate: Delta i debatten
       index:
         filter: Filter
         filters:
-          open: Open processes
+          open: Öppna processer
           next: Nästa
           past: Tidigare
-        no_open_processes: There aren't open processes
-        no_next_processes: There aren't planned processes
-        no_past_processes: There aren't past processes
+        no_open_processes: Det finns inga öppna processer
+        no_next_processes: Inga planerade processer
+        no_past_processes: Det finns inga avslutade processer
         section_header:
-          icon_alt: Legislation processes icon
-          title: Legislation processes
-          help: Help about legislation processes
+          icon_alt: Ikon för lagstiftande process
+          title: Lagstiftningsprocesser
+          help: Hjälp med lagstiftande processer
         section_footer:
-          title: Help about legislation processes
-          description: Participate in the debates and processes prior to the approval of a ordinance or a municipal action. Your opinion will be considered by the City Council.
-          help_text_1: "In participatory processes, the City Council offers to its citizens the opportunity to participate in the drafting and modification of regulations, affecting the city and to be able to give their opinion on certain actions that it plans to carry out."
-          help_text_2: "People registered in %{org} can participate with contributions in the public consultation of new ordinances, regulations and guidelines, among others. Your comments are analyzed by the corresponding area and considered for the final drafting of the ordinances."
-          help_text_3: "The City Council also opens processes to receive contributions and opinions on municipal actions."
+          title: Hjälp med lagstiftande processer
+          description: Delta i debatter och processer inför beslut i staden. Dina åsikter kommer att tas i beaktande av kommunfullmäktige.
+          help_text_1: "Kommunfullmäktige ger möjlighet för medborgare att diskutera och delta i utformandet av policies och förslag till beslut för staden."
+          help_text_2: "Alla som är registrerade på %{org} kan delta och bidra med synpunkter inför nya förslag och beslut för staden. Dina kommentarer analyseras av relevant förvaltning och tas i beaktande i utformandet av nya förslag."
+          help_text_3: "Kommunfullmäktige kan också starta processer för att få synpunkter på förslag."
       phase_not_open:
         not_open: Fasen är inte öppen ännu
       phase_empty:
         empty: Inget har publicerats än
       process:
-        see_latest_comments: See latest comments
-        see_latest_comments_title: Comment on this process
+        see_latest_comments: Se de senaste kommentarerna
+        see_latest_comments_title: Kommentera denna process
       shared:
         key_dates: Viktiga datum
         debate_dates: Debatt
-        draft_publication_date: Draft publication
-        allegations_dates: Allegations
-        result_publication_date: Final result publication
-        proposals_dates: Proposals
+        draft_publication_date: Publiceringsdatum för utkast
+        allegations_dates: Påståenden
+        result_publication_date: Publiceringsdatum för resultat
+        proposals_dates: Förslag
     questions:
       comments:
-        comment_button: Publish answer
-        comments_title: Open answers
+        comment_button: Publicera svar
+        comments_title: Öppna svar
         comments_closed: Avslutad fas
         form:
-          leave_comment: Leave your answer
+          leave_comment: Lämna ditt svar
       question:
         comments:
-          zero: No comments
+          zero: Inga kommentarer
           one: "%{count} kommentar"
           other: "%{count} kommentarer"
         debate: Debatt
       show:
         answer_question: Skicka svar
         next_question: Nästa fråga
-        first_question: First question
+        first_question: Först fråga
         share: Dela
-        title: Collaborative legislation process
+        title: Kollaborativ lagstiftningsprocess
       participation:
         phase_not_open: Denna fas är inte öppen
-        organizations: Organisations are not permitted to participate in the debate
+        organizations: Organisationer får inte delta i debatten
         signin: Logga in
         signup: Registrera sig
-        unauthenticated: You must %{signin} or %{signup} to participate.
-        verified_only: Only verified users can participate, %{verify_account}.
-        verify_account: verify your account
+        unauthenticated: Du behöver %{signin} eller %{signup} för att kunna delta.
+        verified_only: Endast verifierade användare kan delta %{verify_account}.
+        verify_account: verifiera ditt konto
         debate_phase_not_open: Diskussionsfasen har avslutats, och svar kan inte längre tas emot
     shared:
       share: Dela
-      share_comment: Comment on %{version_name} from process draft %{process_name}
+      share_comment: Kommentera %{version_name} från processen %{process_name}
     proposals:
       form:
         tags_label: "Kategorier"
-      not_verified: "For vote proposals %{verify_account}."
-      closed: "This process has been closed and can not receive votes."
+      not_verified: "Rösta på förslag %{verify_account}."
+      closed: "Processen är stängd och går inte att rösta på."

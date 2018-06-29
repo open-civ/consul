@@ -1,6 +1,6 @@
 sv:
   documents:
-    title: Documents
+    title: Dokument
     max_documents_allowed_reached_html: Du har nått gränsen för uppladdade dokument! <strong>Du måste radera ett dokument innan du kan ladda upp ett nytt.</strong>
     form:
       title: Dokument
@@ -17,7 +17,7 @@ sv:
         confirm: Är du säker på att du vill radera dokumentet? Åtgärden kan inte ångras!
     buttons:
       download_document: Ladda ner fil
-      destroy_document: Destroy document
+      destroy_document: Radera dokument
     errors:
       messages:
         in_between: måste vara mellan %{min} och %{max}

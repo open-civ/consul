@@ -5,14 +5,14 @@ sv:
     dashboard:
       index:
         title: Omröstningskontor
-        info: Here you can validate user documents and store voting results
+        info: Här kan du granska användardokumentation och spara resultat från omröstningar
     menu:
-      voters: Validate document
-      total_recounts: Total recounts and results
+      voters: Granska dokument
+      total_recounts: Resultat av omröstning
     polls:
       final:
-        title: Polls ready for final recounting
-        no_polls: You are not officing final recounts in any active poll
+        title: Avslutade omröstningar
+        no_polls: Du har inga omröstningar för granskning
         select_poll: Välj omröstning
         add_results: Lägg till resultat
     results:
@@ -26,31 +26,31 @@ sv:
         booth: "Röstbås"
         date: "Datum"
         select_booth: "Välj röstbås"
-        ballots_white: "Totally blank ballots"
+        ballots_white: "Blankröster"
         ballots_null: "Ogiltiga röster"
         ballots_total: "Totalt antal röster"
         submit: "Spara"
-        results_list: "Your results"
+        results_list: "Dina resultat"
         see_results: "Se resultat"
       index:
         no_results: "Inga resultat"
         results: Resultat
         table_answer: Svar
         table_votes: Röster
-        table_whites: "Totally blank ballots"
+        table_whites: "Blankröster"
         table_nulls: "Ogiltiga röster"
         table_total: "Totalt antal röster"
     residence:
       flash:
-        create: "Document verified with Census"
-        not_allowed: "You don't have officing shifts today"
+        create: "Bekräftat dokument"
+        not_allowed: "Du har inga skift idag"
       new:
-        title: Validate document
-        document_number: "Document number (including letters)"
-        submit: Validate document
-        error_verifying_census: "The Census was unable to verify this document."
-        form_errors: prevented the verification of this document
-        no_assignments: "You don't have officing shifts today"
+        title: Godkänn dokument
+        document_number: "Dokumentnummer (inklusive bokstäver)"
+        submit: Godkänn dokument
+        error_verifying_census: "Ditt dokument kunde inte verifieras mot folkbokföringen."
+        form_errors: förhindrade godkännandet av det här dokumentet
+        no_assignments: "Du har inga skift idag"
     voters:
       new:
         title: Omröstningar
@@ -59,8 +59,8 @@ sv:
         table_actions: Åtgärder
       show:
         can_vote: Kan rösta
-        error_already_voted: Has already participated in this poll
-        submit: Confirm vote
-        success: "Vote introduced!"
+        error_already_voted: Du har redan deltagit i den här omröstningen
+        submit: Bekräfta röst
+        success: "Du har röstat!"
       can_vote:
-        submit_disable_with: "Wait, confirming vote..."
+        submit_disable_with: "Vänta, din röst bekräftas..."

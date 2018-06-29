@@ -11,8 +11,11 @@ sv:
         one: "Investering"
         other: "Investeringar"
       budget/investment/milestone:
-        one: "avstämning"
-        other: "milestones"
+        one: "milstolp"
+        other: "milstolpar"
+      budget/investment/status:
+        one: "Investeringsstatus"
+        other: "Investeringsstatus"
       comment:
         one: "Kommentar"
         other: "Kommentarer"
@@ -53,8 +56,8 @@ sv:
         one: "röstbås"
         other: "röstbås"
       poll/officer:
-        one: "funktionär"
-        other: "funktionärer"
+        one: "valarbetare"
+        other: "valarbetare"
       proposal:
         one: "Medborgarförslag"
         other: "Medborgarförslag"
@@ -123,9 +126,13 @@ sv:
         image: "Illustration av förslaget"
         image_title: "Bildtext"
       budget/investment/milestone:
+        status_id: "Nuvarande investeringsstatus (frivilligt fält)"
         title: "Titel"
-        description: "Beskrivning"
+        description: "Beskrivning (frivilligt fält om projektets status har ställts in)"
         publication_date: "Datum för offentliggörande"
+      budget/investment/status:
+        name: "Namn"
+        description: "Beskrivning (frivilligt fält)"
       budget/heading:
         name: "Rubriknamn"
         price: "Kostnad"
@@ -241,9 +248,9 @@ sv:
         segment_recipient: Mottagare
         subject: Ämne
         from: Från
-        body: E-post innehåll
+        body: E-postmeddelande
       widget/card:
-        label: Label (optional)
+        label: Etikett (tillval)
         title: Titel
         description: Beskrivning
         link_text: Länktext

@@ -12,14 +12,14 @@ sv:
       personal: Personlig information
       phone_number_label: Telefonnummer
       public_activity_label: Håll min lista över aktiviteter offentlig
-      public_interests_label: Keep the labels of the elements I follow public
-      public_interests_my_title_list: Tags of elements you follow
-      public_interests_user_title_list: Tags of elements this user follows
+      public_interests_label: Visa etiketterna för de ämnen jag följer publikt
+      public_interests_my_title_list: Taggar för ämnen du följer
+      public_interests_user_title_list: Taggar för ämnen den här användaren följer
       save_changes_submit: Spara ändringar
-      subscription_to_website_newsletter_label: Receive by email website relevant information
+      subscription_to_website_newsletter_label: Få relevanta uppdateringar om hemsidan med e-post
       email_on_direct_message_label: Få e-post gällande direkta meddelanden
       email_digest_label: Få en sammanfattning av förslagsaviseringar
-      official_position_badge_label: Show official position badge
+      official_position_badge_label: Visa etikett för officiell roll
       title: Mitt konto
       user_permission_debates: Delta på debatter
       user_permission_info: Med ditt konto kan du...
@@ -27,7 +27,7 @@ sv:
       user_permission_support_proposal: Stöd förslag
       user_permission_title: Deltagande
       user_permission_verify: Bekräfta ditt konto för att utföra alla handlingar.
-      user_permission_verify_info: "* Only for users on Census."
+      user_permission_verify_info: "* Endast för användare på folkräkningen."
       user_permission_votes: Delta i slutomröstningen
       username_label: Användarnamn
       verified_account: Kontot verifierat
@@ -115,8 +115,8 @@ sv:
         placeholder: Sök diskussioner...
         title: Sök
       search_results_html:
-        one: " containing the term <strong>'%{search_term}'</strong>"
-        other: " containing the term <strong>'%{search_term}'</strong>"
+        one: " som innehåller ämnet <strong>'%{search_term}'</strong>"
+        other: " som innehåller ämnena <strong>'%{search_term}'</strong>"
       select_order: Sortera efter
       start_debate: Starta en diskussion
       title: Diskussioner
@@ -126,23 +126,23 @@ sv:
         help: Hjälp kring debatter
       section_footer:
         title: Hjälp kring debatter
-        description: Start a debate to share opinions with others about the topics you are concerned about.
-        help_text_1: "The space for citizen debates is aimed at anyone who can expose issues of their concern and those who want to share opinions with other people."
-        help_text_2: 'To open a debate you need to sign up on %{org}. Users can also comment on open debates and rate them with the "I agree" or "I disagree" buttons found in each of them.'
-        help_text_3: "Keep in mind that a debate does not start any specific action. If you want to make a %{proposal} for the city or raise a investment project of %{budget} when the phase is open, go to the corresponding section."
+        description: Starta en debatt för att diskutera frågor du är intresserad av med andra.
+        help_text_1: "Utrymmet för medborgardebatter riktar sig till alla som vill ta upp frågor som berör dem och som de vill diskutera med andra."
+        help_text_2: 'För att starta en debatt behöver du registrera dig på %{org}. Användare kan även kommentera i öppna debatter och betygsätta dem med knapparna för "jag håller med" eller "jag håller inte med".'
+        help_text_3: "Tänk på att en debatt inte leder till någon konkret handling. Om du vill lägga ett %{proposal} för staden eller föreslå ett investeringsprojekt för %{budget} när den fasen är öppen, gå till respektive del av hemsidan."
         proposals_link: förslag
         budget_link: deltagande budgeterande
     new:
       form:
         submit_button: Starta en diskussion
-      info: If you want to make a proposal, this is the wrong section, enter %{info_link}.
+      info: Om du vill lägga ett förslag är det här fel avdelning, gå till %{info_link}.
       info_link: skapa nytt förslag
       more_info: Mer information
-      recommendation_four: Enjoy this space and the voices that fill it. It belongs to you too.
+      recommendation_four: Det här är din plats, du ska kunna trivas och göra din röst hörd här.
       recommendation_one: Använd inte versaler för diskussionstiteln eller för hela meningar. På internet anses detta skrika. Och gillar ingen att bli skriken på.
-      recommendation_three: Ruthless criticism is very welcome. This is a space for reflection. But we recommend that you stick to elegance and intelligence. The world is a better place with these virtues in it.
-      recommendation_two: Any debate or comment suggesting illegal action will be deleted, as well as those intending to sabotage the debate spaces. Anything else is allowed.
-      recommendations_title: Recommendations for creating a debate
+      recommendation_three: Hänsynslös kritik välkomnas. Det här utrymmet är till för diskussion och reflektion. Men vi rekommenderar att du ändå håller diskussionen sjysst och intelligent. Världen blir en bättre plats om vi alla tänker på det.
+      recommendation_two: Debattinlägg eller kommentarer som förespråkar olagliga handlingar eller försöker sabotera diskussionen kommer att raderas. Allt annat är tillåtet.
+      recommendations_title: Rekommendationer för debattinlägg
       start_new: Starta en diskussion
     show:
       author_deleted: Användaren borttagen
@@ -153,7 +153,7 @@ sv:
       comments_title: Kommentarer
       edit_debate_link: Redigera
       flag: Denna debatt har flaggats som olämpligt av flera användare.
-      login_to_comment: You must %{signin} or %{signup} to leave a comment.
+      login_to_comment: Du behöver %{signin} eller %{signup} för att kunna kommentera.
       share: Dela
       author: Författare
     update:
@@ -164,20 +164,20 @@ sv:
       user_not_found: Användaren hittades inte
       invalid_date_range: "Felaktig datumföljd"
   form:
-    accept_terms: I agree to the %{policy} and the %{conditions}
-    accept_terms_title: I agree to the Privacy Policy and the Terms and conditions of use
-    conditions: Terms and conditions of use
+    accept_terms: Jag godkänner %{policy} och %{conditions}
+    accept_terms_title: Jag godkänner sekretesspolicyn och användarvillkoren
+    conditions: Regler och villkor för användning
     debate: Debatt
     direct_message: privat meddelande
     error: fel
     errors: fel
-    not_saved_html: "prevented this %{resource} from being saved. <br>Please check the marked fields to know how to correct them:"
+    not_saved_html: "förhindrade att %{resource} sparas. <br>Kontrollera och rätta till de markerade fälten:"
     policy: Sekretesspolicy
     proposal: Förslag
     proposal_notification: "Anmälan"
     spending_proposal: Investeringsförslag
     budget/investment: Investering
-    budget/heading: Budget Heading
+    budget/heading: Budgetrubrik
     poll/shift: Skift
     poll/question/answer: Svar
     user: Konto
@@ -193,25 +193,25 @@ sv:
     application:
       chrome: Google Chrome
       firefox: Firefox
-      ie: We have detected that you are browsing with Internet Explorer. For an enhanced experience, we recommend using %{firefox} or %{chrome}.
-      ie_title: This website is not optimised for your browser
+      ie: Vi har upptäckt att du använder Internet Explorer. För en förbättrad upplevelse rekommenderar vi %{firefox} eller %{chrome}.
+      ie_title: Webbplatsen är inte optimerad för din webbläsare
     footer:
       accessibility: Tillgänglighet
-      conditions: Terms and conditions of use
-      consul: CONSUL application
+      conditions: Regler och villkor för användning
+      consul: CONSUL programvara
       consul_url: https://github.com/consul/consul
-      contact_us: For technical assistance enters
+      contact_us: För teknisk support gå till
       copyright: CONSUL, %{year}
-      description: This portal uses the %{consul} which is %{open_source}.
-      faq: technical assistance
-      open_data_text: Every detail about the City Council is yours to access.
+      description: Den här webbplatsen använder %{consul} som är %{open_source}.
+      faq: teknisk support
+      open_data_text: Du har tillgång till all information om kommunfullmäktige.
       open_data_title: Öppna data
       open_source: mjukvara med öppen källkod
       open_source_url: http://www.gnu.org/licenses/agpl-3.0.html
-      participation_text: Decide how to shape the city you want to live in.
+      participation_text: Skapa den stad du vill ha.
       participation_title: Deltagande
       privacy: Sekretesspolicy
-      transparency_text: Find out anything about the city.
+      transparency_text: Få reda på allt som staden.
       transparency_title: Transparens
       transparency_url: https://transparency.consul
     header:
@@ -230,35 +230,35 @@ sv:
       management: Förvaltning
       moderation: Moderering
       valuation: Bedömning
-      officing: Polling officers
+      officing: Valarbetare
       help: Hjälp
       my_account_link: Mitt konto
       my_activity_link: Min aktivitet
       open: öppen
-      open_gov: Open government
+      open_gov: Öppna myndigheter
       proposals: Förslag
-      poll_questions: Voting
-      budgets: Participatory budgeting
-      spending_proposals: Spending Proposals
+      poll_questions: Rösta
+      budgets: Medborgarbudget
+      spending_proposals: Investeringsförslag
       notification_item:
         new_notifications:
-          one: You have a new notification
-          other: You have %{count} new notifications
+          one: Du har %{count} nytt meddelande
+          other: Du har %{count} nya meddelanden
         notifications: Notiser
-        no_notifications: "You don't have new notifications"
+        no_notifications: "Du har inga nya meddelanden"
     admin:
-      watch_form_message: 'You have unsaved changes. Do you confirm to leave the page?'
+      watch_form_message: 'Du har osparade ändringar. Vill du verkligen lämna sidan?'
   legacy_legislation:
     help:
-      alt: Select the text you want to comment and press the button with the pencil.
-      text: To comment this document you must %{sign_in} or %{sign_up}. Then select the text you want to comment and press the button with the pencil.
+      alt: Markera texten du vill kommentera och klicka på knappen med pennan.
+      text: Du behöver %{sign_in} eller %{sign_up} för att kommentera dokumentet. Markera sedan texten du vill kommentera och klicka på knappen med pennan.
       text_sign_in: logga in
       text_sign_up: registrera sig
-      title: How I can comment this document?
+      title: Hur kommenterar jag det här dokumentet?
   locale: Svenska
   notifications:
     index:
-      empty_notifications: You don't have new notifications.
+      empty_notifications: Du har inga nya meddelanden.
       mark_all_as_read: Markera alla som läst
       read: Läst
       title: Notiser
@@ -269,27 +269,27 @@ sv:
           one: Någon kommenterade på
           other: Det finns %{count} nya kommentarer på
         proposal_notification:
-          one: There is one new notification on
-          other: There are %{count} new notifications on
+          one: Du har ett nytt meddelande om
+          other: Du har %{count} nya meddelanden om
         replies_to:
-          one: Someone replied to your comment on
-          other: There are %{count} new replies to your comment on
+          one: Du har fått ett svar på din kommentar om
+          other: Du har fått %{count} svar på din kommentar om
       mark_as_read: Markera som läst
       mark_as_unread: Markera som oläst
-      notifiable_hidden: This resource is not available anymore.
+      notifiable_hidden: Den här resursen är inte längre tillgänglig.
   map:
     title: "Distrikter"
-    proposal_for_district: "Start a proposal for your district"
-    select_district: Scope of operation
-    start_proposal: Create a proposal
+    proposal_for_district: "Skriv ett förslag för din stadsdel"
+    select_district: Verksamhetsområde
+    start_proposal: Skapa ett förslag
   omniauth:
     facebook:
       sign_in: Logga in med Facebook
       sign_up: Registrera dig med Facebook
       name: Facebook
     finish_signup:
-      title: "Additional details"
-      username_warning: "Due to a change in the way we interact with social networks, it is possible that your username now appears as 'already in use'. If that is your case, please choose a different username."
+      title: "Ytterligare detaljer"
+      username_warning: "På grund av hur integreringen med sociala nätverk fungerar kan du få felmeddelandet 'används redan' för ditt användarnamn. I så fall behöver du välja ett annat användarnamn."
     google_oauth2:
       sign_in: Logga in med Google
       sign_up: Registrera dig med Google
@@ -300,7 +300,7 @@ sv:
       name: Twitter
     info_sign_in: "Logga in med:"
     info_sign_up: "Registrera dig med:"
-    or_fill: "Or fill the following form:"
+    or_fill: "Eller fyll i följande formulär:"
   proposals:
     create:
       form:
@@ -311,40 +311,40 @@ sv:
         submit_button: Spara ändringar
       show_link: Visa förslag
     retire_form:
-      title: Retire proposal
-      warning: "If you retire the proposal it would still accept supports, but will be removed from the main list and a message will be visible to all users stating that the author considers the proposal should not be supported anymore"
-      retired_reason_label: Reason to retire the proposal
-      retired_reason_blank: Choose an option
+      title: Ta tillbaka förslaget
+      warning: "Om du tar tillbaka ditt förslag går det fortfarande att stödja det, men det tas bort från listan och det visas ett meddelande om att du inte anser att förslaget bör stödjas längre"
+      retired_reason_label: Anledning att ta tillbaka förslaget
+      retired_reason_blank: Välj en anledning
       retired_explanation_label: Förklaring
-      retired_explanation_placeholder: Explain shortly why you think this proposal should not receive more supports
-      submit_button: Retire proposal
+      retired_explanation_placeholder: Förklara varför du inte längre vill att förslaget ska stödjas
+      submit_button: Ta tillbaka förslaget
     retire_options:
       duplicated: Duplicerad
-      started: Already underway
+      started: Pågående
       unfeasible: Ej genomförbart
       done: Genomfört
       other: Andra
     form:
-      geozone: Scope of operation
-      proposal_external_url: Link to additional documentation
-      proposal_question: Proposal question
-      proposal_question_example_html: "Must be summarised in one question with a Yes or No answer. <br>E.g. 'Do you agree with the pedestrianisation of Calle Mayor?'"
-      proposal_responsible_name: Full name of the person submitting the proposal
-      proposal_responsible_name_note: "(individually or as representative of a collective; will not be displayed publically)"
-      proposal_summary: Proposal summary
-      proposal_summary_note: "(maximum 200 characters)"
+      geozone: Verksamhetsområde
+      proposal_external_url: Länk till ytterligare dokumentation
+      proposal_question: Frågeställning
+      proposal_question_example_html: "Ska sammanfattas i en ja- eller nej-fråga.<br>Till exempel: 'Ska vi göra om Drottninggatan till gågata?'"
+      proposal_responsible_name: Förslagslämnarens fullständiga namn
+      proposal_responsible_name_note: "(individuellt eller som representant för en grupp; kommer inte att visas offentligt)"
+      proposal_summary: Förslags sammanfattning
+      proposal_summary_note: "(högst 200 tecken)"
       proposal_text: Förslags text
       proposal_title: Förslags titel
       proposal_video_url: Länk till extern video
-      proposal_video_url_note: You may add a link to YouTube or Vimeo
+      proposal_video_url_note: Lägg till en länk till YouTube eller Vimeo
       tag_category_label: "Kategorier"
-      tags_instructions: "Tag this proposal. You can choose from proposed categories or add your own"
+      tags_instructions: "Lägg till ämnesområden till förslaget. Du kan välja mellan de föreslagna kategorierna eller lägga till dina egna"
       tags_label: Taggar
-      tags_placeholder: "Enter the tags you would like to use, separated by commas (',')"
+      tags_placeholder: "Skriv de ämnesområden du vill använda, avgränsade med komma (',')"
       map_location: "Kartposition"
-      map_location_instructions: "Navigate the map to the location and place the marker."
-      map_remove_marker: "Remove map marker"
-      map_skip_checkbox: "This proposal doesn't have a concrete location or I'm not aware of it."
+      map_location_instructions: "Navigera till platsen på kartan och placera markören."
+      map_remove_marker: "Ta bort kartmarkör"
+      map_skip_checkbox: "Det finns ingen specifik geografisk plats för förslaget, eller jag känner inte till platsen."
     index:
       featured_proposals: Stjärnmarkerade
       filter_topic:
@@ -359,10 +359,10 @@ sv:
         archival_date: arkiverad
         recommendations: rekommendationer
       recommendations:
-        without_results: There are not proposals related to your interests
-        without_interests: Follow proposals so we can give you recommendations
-      retired_proposals: Retired proposals
-      retired_proposals_link: "Proposals retired by the author"
+        without_results: Finns det inga förslag som rör dina intressen
+        without_interests: Följ förslag så vi kan ge dig rekommendationer
+      retired_proposals: Förslag som dragits tillbaka
+      retired_proposals_link: "Förslag som dragits tillbaka av förslagslämnaren"
       retired_links:
         all: Alla
         duplicated: Duplicerad
@@ -375,44 +375,44 @@ sv:
         placeholder: Sök förslag...
         title: Sök
       search_results_html:
-        one: " containing the term <strong>'%{search_term}'</strong>"
-        other: " containing the term <strong>'%{search_term}'</strong>"
+        one: " innehåller <strong>'%{search_term}'</strong>"
+        other: " innehåller <strong>'%{search_term}'</strong>"
       select_order: Sortera efter
-      select_order_long: 'You are viewing proposals according to:'
+      select_order_long: 'Du visar förslagen'
       start_proposal: Skapa förslag
       title: Förslag
       top: Veckans topp
-      top_link_proposals: The most supported proposals by category
+      top_link_proposals: Populäraste förslagen från varje kategori
       section_header:
         icon_alt: Förslag-ikonen
         title: Förslag
         help: Hjälp om förslag
       section_footer:
         title: Hjälp om förslag
-        description: Make a citizen proposal. If it gets enough supports it will go to voting phase, so you can get all the citizens to decide how they want their city to be.
-        help_text_1: "The citizen proposals are an opportunity for neighbours and collectives to decide directly how they want to shape their city. Any person can make a proposal about a topic or concern of their interest, for the City Council to make it, after it gets enough supports to be put to a citizens vote."
-        help_text_2: "To create a proposal, you must sign up on %{org}. The proposals that get the support of 1% of the users in the web, goes to voting phase. To support proposals it is necessary to have a verified account."
-        help_text_3: "A citizen vote is celebrated when the proposals get the necessary supports. Once celebrated, if there are more people in favor than against, the City Council assumes the proposal and carries it out."
+        description: Skriv ett medborgarförslag. Om det får tillräckligt med stöd går det till omröstning, så att alla medborgare kan bestämma om sin stad.
+        help_text_1: "Medborgarförslagen är en möjlighet för grannar och föreningar att bestämma hur de vill att staden ska se ut. Vem som helst kan lämna ett förslag om en fråga som är viktigt för dem, och kommunen kommer sedan genomföra förslaget om det för tillräckligt med stöd för att gå till omröstning och vinna."
+        help_text_2: "Du behöver registrera dig på %{org} för att skapa ett förslag. Förslag som får stöd 1% av invånarna går vidare till omröstning. Du behöver ha ett verifierat konto för att kunna stödja förslag."
+        help_text_3: "Medborgarförslag som fått tillräckligt stöd går vidare till omröstning. Om förslaget får en majoritet av rösterna i omröstningen kommer kommunen att genomföra förslaget."
     new:
       form:
         submit_button: Skapa förslag
-      more_info: How do citizen proposals work?
-      recommendation_one: Do not use capital letters for the proposal title or for whole sentences. On the internet, this is considered shouting. And nobody likes being shouted at.
-      recommendation_three: Enjoy this space and the voices that fill it. It belongs to you too.
-      recommendation_two: Any proposal or comment suggesting illegal action will be deleted, as well as those intending to sabotage the debate spaces. Anything else is allowed.
-      recommendations_title: Recommendations for creating a proposal
+      more_info: Hur fungerar medborgarförslag?
+      recommendation_one: Använd inte versaler i förslagets titel eller i hela meningar i beskrivningen. På internet betyder det att skrika, och ingen gillar när folk skriker på dem.
+      recommendation_three: Det här är din plats, du ska kunna trivas och göra din röst hörd här.
+      recommendation_two: Förslag eller kommentarer som förespråkar olagliga handlingar eller försöker sabotera diskussionen kommer att raderas. Allt annat är tillåtet.
+      recommendations_title: Rekommendationer för att skriva förslag
       start_new: Skapa nytt förslag
     notice:
-      retired: Proposal retired
+      retired: Förslag som dragits tillbaka
     proposal:
-      created: "You've created a proposal!"
+      created: "Du skapade ett förslag!"
       share:
-        guide: "Now you can share it so people can start supporting."
-        edit: "Before it gets shared you'll be able to change the text as you like."
-        view_proposal: Not now, go to my proposal
-      improve_info: "Improve your campaign and get more supports"
+        guide: "Nu kan du dela förslaget så att folk kan börja stödja det."
+        edit: "Du kan ändra texten fram tills förslaget har delats."
+        view_proposal: Inte nu, gå till mitt förslag
+      improve_info: "Få mer stöd genom att förbättra ditt förslag"
       improve_info_link: "Se mer information"
-      already_supported: You have already supported this proposal. Share it!
+      already_supported: Du stödjer redan det här förslaget. Dela det!
       comments:
         zero: Inga kommentarer
         one: 1 kommentar
@@ -428,10 +428,10 @@ sv:
         zero: Inga röster
         one: 1 röst
         other: "%{count} röster"
-      supports_necessary: "%{number} supports needed"
+      supports_necessary: "behöver %{number} röster"
       total_percent: 100%
-      archived: "This proposal has been archived and can't collect supports."
-      successful: "This proposal has reached the required supports and will be voted in the %{voting}."
+      archived: "Förslaget har arkiverats och kan inte längre stödjas."
+      successful: "Förslaget har fått tillräckligt stort stöd och kommer att gå vidare till %{voting}."
       voting: "nästa omröstning"
     show:
       author_deleted: Användare borttagen
@@ -442,17 +442,17 @@ sv:
         other: "%{count} kommentarer"
       comments_tab: Kommentarer
       edit_proposal_link: Redigera
-      flag: This proposal has been flagged as inappropriate by several users.
-      login_to_comment: You must %{signin} or %{signup} to leave a comment.
+      flag: Förslaget har markerats som olämpligt av flera användare.
+      login_to_comment: Du behöver %{signin} eller %{signup} för att kunna kommentera.
       notifications_tab: Notiser
-      retired_warning: "The author considers this proposal should not receive more supports."
-      retired_warning_link_to_explanation: Read the explanation before voting for it.
-      retired: Proposal retired by the author
+      retired_warning: "Förslagslämnaren vill inte längre att förslaget ska samla stöd."
+      retired_warning_link_to_explanation: Läs beskrivningen innan du röstar på förslaget.
+      retired: Förslag som dragits tillbaka av förslagslämnaren
       share: Dela
       send_notification: Skicka notis
-      no_notifications: "This proposal has any notifications."
+      no_notifications: "Förslaget har inte några meddelanden."
       embed_video_title: "Video om %{proposal}"
-      title_external_url: "Additional documentation"
+      title_external_url: "Ytterligare dokumentation"
       title_video_url: "Extern video"
       author: Författare
     update:
@@ -460,60 +460,60 @@ sv:
         submit_button: Spara ändringar
   polls:
     all: "Alla"
-    no_dates: "no date assigned"
-    dates: "From %{open_at} to %{closed_at}"
-    final_date: "Final recounts/Results"
+    no_dates: "inget datum har tilldelats"
+    dates: "Från %{open_at} till %{closed_at}"
+    final_date: "Slutgiltigt resultat"
     index:
       filters:
         current: "Pågående"
         incoming: "Inkommande"
-        expired: "Expired"
+        expired: "Avslutad"
       title: "Omröstningar"
-      participate_button: "Participate in this poll"
-      participate_button_incoming: "More information"
+      participate_button: "Delta i denna omröstning"
+      participate_button_incoming: "Mer information"
       participate_button_expired: "Omröstningen är slut"
       no_geozone_restricted: "Hela staden"
       geozone_restricted: "Distrikter"
-      geozone_info: "Can participate people in the Census of: "
-      already_answer: "You already have participated in this poll"
+      geozone_info: "Öppen för invånare från: "
+      already_answer: "Du har redan deltagit i den här omröstningen"
       section_header:
         icon_alt: Omröstnings ikon
         title: Omröstning
         help: Hjälp om omröstning
       section_footer:
         title: Hjälp om omröstning
-        description: Sign up to vote on citizen proposals and questions the City Council ask to the neighbors. Make municipal decisions directly.
-        help_text_1: "Voting takes place when a citizen proposal supports reaches 1% of the census with voting rights. Voting can also include questions that the City Council ask to the citizens decision."
-        help_text_2: "To participate in the next vote you have to sign up on %{org} and verify your account. All registered voters in the city over 16 years old can vote. The results of all votes are binding on the government."
-      no_polls: "There are no open votings."
+        description: Registrera dig för att kunna rösta på medborgarförslag och förslag från staden. Bli direkt delaktig i lokala beslut.
+        help_text_1: "Förslag som får stöd 1% av invånarna går vidare till omröstning. Även förslag från kommunfullmäktige kan gå till omröstning."
+        help_text_2: "För att delta i nästa omröstning behöver du registrera dig på %{org} och verifiera ditt konto. Alla stadens invånare över 16 får rösta. Resultatet av omröstningen är bindande för kommunfullmäktige."
+      no_polls: "Det finns inga pågående omröstningar."
     show:
-      already_voted_in_booth: "You have already participated in a physical booth. You can not participate again."
-      already_voted_in_web: "You have already participated in this poll. If you vote again it will be overwritten."
-      back: Back to voting
-      cant_answer_not_logged_in: "You must %{signin} or %{signup} to participate."
+      already_voted_in_booth: "Du har redan röstat i en fysisk valstation. Du kan inte rösta igen."
+      already_voted_in_web: "Du har redan deltagit i den här omröstningen. Om du röstar igen kommer din föregående röst att skrivas över."
+      back: Tillbaka till omröstning
+      cant_answer_not_logged_in: "Du behöver %{signin} eller %{signup} för att kunna delta."
       comments_tab: Kommentarer
-      login_to_comment: You must %{signin} or %{signup} to leave a comment.
+      login_to_comment: Du behöver %{signin} eller %{signup} för att kunna kommentera.
       signin: Logga in
       signup: Registrera sig
-      cant_answer_verify_html: "You must %{verify_link} in order to answer."
+      cant_answer_verify_html: "Du måste %{verify_link} för att svara."
       verify_link: "verifiera ditt konto"
-      cant_answer_incoming: "This poll has not yet started."
-      cant_answer_expired: "This poll has finished."
-      cant_answer_wrong_geozone: "This question is not available on your geozone."
-      more_info_title: "More information"
+      cant_answer_incoming: "Omröstningen har inte börjat än."
+      cant_answer_expired: "Omröstningen är avslutad."
+      cant_answer_wrong_geozone: "Den här frågan är inte tillgänglig i ditt geografiska område."
+      more_info_title: "Mer information"
       documents: Dokument
       zoom_plus: Expandera bild
-      read_more: "Read more about %{answer}"
-      read_less: "Read less about %{answer}"
-      participate_in_other_polls: Participate in other polls
-      videos: "External video"
+      read_more: "Läs mer om %{answer}"
+      read_less: "Visa mindre om %{answer}"
+      participate_in_other_polls: Delta i andra omröstningar
+      videos: "Extern video"
       info_menu: "Information"
-      stats_menu: "Participation statistics"
+      stats_menu: "Deltagandestatistik"
       results_menu: "Omröstningsresultat"
       stats:
         title: "Deltagardata"
         total_participation: "Totalt antal deltagare"
-        total_votes: "Total amount of given votes"
+        total_votes: "Totalt antal röster"
         votes: "RÖSTER"
         web: "WEBB"
         booth: "VALSTATION"
@@ -528,15 +528,15 @@ sv:
     create_question: "Skapa fråga"
     show:
       vote_answer: "Rösta för %{answer}"
-      voted: "You have voted %{answer}"
-      voted_token: "You can write down this vote identifier, to check your vote on the final results:"
+      voted: "Du har röstat %{answer}"
+      voted_token: "Skriv ner den här verifieringskoden för att kunna kontrollera din röst i det slutgiltiga resultatet:"
   proposal_notifications:
     new:
       title: "Skicka meddelande"
       title_label: "Titel"
       body_label: "Meddelande"
       submit_button: "Skicka meddelande"
-      info_about_receivers_html: "This message will be send to <strong>%{count} people</strong> and it will be visible in %{proposal_page}.<br> Message are not sent immediately, users will receive periodically an email with all proposal notifications."
+      info_about_receivers_html: "Det här meddelandet kommer att skickas till <strong>%{count} personer</strong> och visas på %{proposal_page}.<br> Meddelanden skickas inte på en gång, utan som regelbundna e-postmeddelanden med sammanfattningar av förslagen."
       proposal_page: "förslagets sida"
     show:
       back: "Gå tillbaka till min aktivitet"
@@ -548,7 +548,7 @@ sv:
     "no": "Nej"
     search_results: "Sökresultat"
     advanced_search:
-      author_type: 'By author category'
+      author_type: 'Efter författarkategori'
       author_type_blank: 'Välj en kategori'
       date: 'Efter datum'
       date_placeholder: 'DD/MM/ÅÅÅÅ'
@@ -574,18 +574,18 @@ sv:
     flag: Flagga som olämplig
     follow: "Följ"
     following: "Följer"
-    follow_entity: "Follow %{entity}"
+    follow_entity: "Följ %{entity}"
     followable:
       budget_investment:
         create:
-          notice_html: "You are now following this investment project! </br> We will notify you of changes as they occur so that you are up-to-date."
+          notice_html: "Du följer nu det här investeringsprojektet! </br> Vi meddelar dig om alla ändringar så att du kan hålla dig uppdaterad."
         destroy:
-          notice_html: "You have stopped following this investment project! </br> You will no longer receive notifications related to this project."
+          notice_html: "Du har slutat följa det här investeringsprojektet! </br> Vi kommer inte längre meddela dig om ändringar för det här projektet."
       proposal:
         create:
-          notice_html: "Now you are following this citizen proposal! </br> We will notify you of changes as they occur so that you are up-to-date."
+          notice_html: "Du följer nu det här medborgarförslaget! </br> Vi meddelar dig om alla ändringar så att du kan hålla dig uppdaterad."
         destroy:
-          notice_html: "You have stopped following this citizen proposal! </br> You will no longer receive notifications related to this proposal."
+          notice_html: "Du har slutat följa det här medborgarförslaget! </br> Vi kommer inte längre meddela dig om ändringar för det här förslaget."
     hide: Göm
     print:
       print_button: Skriv ut denna info
@@ -594,40 +594,40 @@ sv:
     suggest:
       debate:
         found:
-          one: "There is a debate with the term '%{query}', you can participate in it instead of opening a new one."
-          other: "There are debates with the term '%{query}', you can participate in them instead of opening a new one."
-        message: "You are seeing %{limit} of %{count} debates containing the term '%{query}'"
+          one: "Det finns redan en debatt om '%{query}'. Du kan delta i den istället för att starta en ny debatt."
+          other: "Det finns redan debatter om '%{query}'. Du kan delta i dem istället för att starta en ny debatt."
+        message: "Du visar %{limit} av %{count} debatter som innehåller '%{query} '"
         see_all: "Se alla"
       budget_investment:
         found:
-          one: "There is an investment with the term '%{query}', you can participate in it instead of opening a new one."
-          other: "There are investments with the term '%{query}', you can participate in them instead of opening a new one."
-        message: "You are seeing %{limit} of %{count} investments containing the term '%{query}'"
+          one: "Det finns redan ett projekt om '%{query}'. Du kan delta i det istället för att skapa ett nytt projekt."
+          other: "Det finns redan projekt om '%{query}'. Du kan delta i dem istället för att skapa ett nytt projekt."
+        message: "Du visar %{limit} av %{count} projekt som innehåller '%{query} '"
         see_all: "Se alla"
       proposal:
         found:
-          one: "There is a proposal with the term '%{query}', you can contribute to it instead of creating a new"
-          other: "There are proposals with the term '%{query}', you can contribute to them instead of creating a new"
-        message: "You are seeing %{limit} of %{count} proposals containing the term '%{query}'"
+          one: "Det finns redan ett förslag om '%{query}'. Du kan delta i det istället för att skapa ett nytt förslag"
+          other: "Det finns redan förslag om '%{query}'. Du kan delta i dem istället för att skapa ett nytt förslag"
+        message: "Du visar %{limit} av %{count} förslag som innehåller '%{query} '"
         see_all: "Se alla"
     tags_cloud:
-      tags: Trending
+      tags: Populära
       districts: "Distrikter"
-      districts_list: "Districts list"
+      districts_list: "Distriktlist"
       categories: "Kategorier"
-    target_blank_html: " (link opens in new window)"
+    target_blank_html: " (länken öppnas i nytt fönster)"
     you_are_in: "Du är på"
     unflag: Ta bort flagga
-    unfollow_entity: "Unfollow %{entity}"
+    unfollow_entity: "Sluta följa %{entity}"
     outline:
       budget: Medborgarbudget
-      searcher: Searcher
-    go_to_page: "Go to page of "
+      searcher: Sökmotor
+    go_to_page: "Gå till sidan av "
     share: Dela
     orbit:
-      previous_slide: Previous Slide
+      previous_slide: Föregående sida
       next_slide: Nästa sida
-    documentation: Additional documentation
+    documentation: Ytterligare dokumentation
     view_mode:
       title: Visningsmod
       cards: Kort
@@ -642,46 +642,46 @@ sv:
     instagram: "%{org} Instagram"
   spending_proposals:
     form:
-      association_name_label: 'If you propose in name of an assocation or collective add the name here'
-      association_name: 'Association name'
+      association_name_label: 'Namn på grupp eller organisation som förslaget kommer från'
+      association_name: 'Föreningens namn'
       description: Beskrivning
-      external_url: Link to additional documentation
-      geozone: Scope of operation
+      external_url: Länk till ytterligare dokumentation
+      geozone: Geografiskt område
       submit_buttons:
         create: Skapa
         new: Skapa
-      title: Spending proposal title
+      title: Investeringsförslagstitel
     index:
-      title: Participatory budgeting
+      title: Medborgarbudget
       unfeasible: Ogenomförbara investeringsprojekt
-      by_geozone: "Investment projects with scope: %{geozone}"
+      by_geozone: "Investeringsprojekt för område: %{geozone}"
       search_form:
         button: Sök
         placeholder: Investeringsprojekt...
         title: Sök
       search_results:
-        one: " containing the term '%{search_term}'"
-        other: " containing the term '%{search_term}'"
+        one: " innehåller '%{search_term}'"
+        other: " innehåller '%{search_term}'"
       sidebar:
-        geozones: Scope of operation
+        geozones: Geografiskt område
         feasibility: Genomförbarhet
         unfeasible: Ej genomförbart
-      start_spending_proposal: Create an investment project
+      start_spending_proposal: Skapa ett investeringsprojekt
     new:
-      more_info: How do participatory budgeting works?
-      recommendation_one: It's mandatory that the proposal makes reference to a budgetable action.
-      recommendation_three: Try to go into details when describing your spending proposal so the reviewing team undertands your points.
-      recommendation_two: Any proposal or comment suggesting illegal action will be deleted.
-      recommendations_title: How to create a spending proposal
-      start_new: Create spending proposal
+      more_info: Hur funkar medborgarbudgetar?
+      recommendation_one: Förslaget måste ge hänvisa till faktiska kostnader.
+      recommendation_three: Beskriv ditt förslag så detaljerat som möjligt, så att att de som granskar det förstår vad du menar.
+      recommendation_two: Förslag som förespråkar olagliga handlingar kommer att raderas.
+      recommendations_title: Så skapar du ett budgetförslag
+      start_new: Skapa investeringsförslag
     show:
       author_deleted: Användare borttagen
-      code: 'Proposal code:'
+      code: 'Förslagskod:'
       share: Dela
     wrong_price_format: Endast heltal
     spending_proposal:
-      spending_proposal: Investment project
-      already_supported: You have already supported this. Share it!
+      spending_proposal: Investeringsprojekt
+      already_supported: Du stödjer redan det här projektet. Dela det!
       support: Stöd
       support_title: Stödja detta projekt
       supports:
@@ -694,36 +694,36 @@ sv:
       debates: Debatter
       proposals: Förslag
       comments: Kommentarer
-      proposal_votes: Votes on proposals
-      debate_votes: Votes on debates
+      proposal_votes: Röster om förslag
+      debate_votes: Röster om debatter
       comment_votes: Röster på kommentarer
       votes: Totalt antal röster
-      verified_users: Verified users
-      unverified_users: Unverified users
+      verified_users: Verifierade användare
+      unverified_users: Overifierade användare
   unauthorized:
-    default: You do not have permission to access this page.
+    default: Du har inte behörighet att komma åt sidan.
     manage:
-      all: "You do not have permission to carry out the action '%{action}' on %{subject}."
+      all: "Du har inte behörighet att utföra åtgärden '%{action}' %{subject}."
   users:
     direct_messages:
       new:
         body_label: Meddelande
-        direct_messages_bloqued: "This user has decided not to receive direct messages"
+        direct_messages_bloqued: "Användaren tar inte emot direkta meddelanden"
         submit_button: Skicka meddelande
-        title: Send private message to %{receiver}
+        title: Skicka ett privat meddelande till %{receiver}
         title_label: Titel
-        verified_only: To send a private message %{verify_account}
+        verified_only: För att skicka ett privat meddelande behöver du %{verify_account}
         verify_account: verifiera ditt konto
-        authenticate: You must %{signin} or %{signup} to continue.
+        authenticate: Du behöver %{signin} eller %{signup} för att fortsätta.
         signin: logga in
         signup: registrera sig
       show:
-        receiver: Message sent to %{receiver}
+        receiver: Meddelandet har skickats till %{receiver}
     show:
       deleted: Raderat
-      deleted_debate: This debate has been deleted
+      deleted_debate: Den här debatten har tagits bort
       deleted_proposal: Det här förslaget har tagits bort
-      deleted_budget_investment: This investment project has been deleted
+      deleted_budget_investment: Det här projektet har tagits bort
       proposals: Förslag
       debates: Debatter
       budget_investments: Budget investeringar
@@ -745,43 +745,43 @@ sv:
         follows:
           one: 1 Följer
           other: "%{count} Följer"
-      no_activity: User has no public activity
-      no_private_messages: "This user doesn't accept private messages."
-      private_activity: This user decided to keep the activity list private.
+      no_activity: Användaren har ingen offentlig aktivitet
+      no_private_messages: "Användaren tar inte emot privata meddelanden."
+      private_activity: Användarens aktivitetslista är privat.
       send_private_message: "Skicka privat meddelande"
-      delete_alert: "Are you sure you want to delete your investment project? This action can't be undone"
+      delete_alert: "Är du säker på att du vill radera projektet? Åtgärden kan inte ångras"
     proposals:
       send_notification: "Skicka notis"
       retire: "Dra tillbaka"
-      retired: "Retired proposal"
+      retired: "Förslag som dragits tillbaka"
       see: "Se förslag"
   votes:
     agree: Jag håller med
-    anonymous: Too many anonymous votes to admit vote %{verify_account}.
-    comment_unauthenticated: You must %{signin} or %{signup} to vote.
+    anonymous: För många anonyma röster för att godkänna omröstningen %{verify_account}.
+    comment_unauthenticated: Du behöver %{signin} eller %{signup} för att rösta.
     disagree: Jag håller inte med
-    organizations: Organizations are not permitted to vote
+    organizations: Organisationer kan inte rösta
     signin: Logga in
     signup: Registrera sig
     supports: Stöd
-    unauthenticated: You must %{signin} or %{signup} to continue.
-    verified_only: Only verified users can vote on proposals; %{verify_account}.
+    unauthenticated: Du behöver %{signin} eller %{signup} för att fortsätta.
+    verified_only: Endast verifierade användare kan rösta på förslag; %{verify_account}.
     verify_account: verifiera ditt konto
     spending_proposals:
-      not_logged_in: You must %{signin} or %{signup} to continue.
-      not_verified: Only verified users can vote on proposals; %{verify_account}.
-      organization: Organizations are not permitted to vote
-      unfeasible: Unfeasible investment projects can not be supported
+      not_logged_in: Du behöver %{signin} eller %{signup} för att fortsätta.
+      not_verified: Endast verifierade användare kan rösta på förslag; %{verify_account}.
+      organization: Organisationer kan inte rösta
+      unfeasible: Det går inte att stödja investeringsprojekt som inte godkänts
       not_voting_allowed: Omröstningsfas är stäng
     budget_investments:
-      not_logged_in: You must %{signin} or %{signup} to continue.
-      not_verified: Only verified users can vote on investment projects; %{verify_account}.
-      organization: Organizations are not permitted to vote
-      unfeasible: Unfeasible investment projects can not be supported
+      not_logged_in: Du behöver %{signin} eller %{signup} för att fortsätta.
+      not_verified: Endast verifierade användare kan rösta på investeringsprojekt; %{verify_account}.
+      organization: Organisationer kan inte rösta
+      unfeasible: Det går inte att stödja investeringsprojekt som inte godkänts
       not_voting_allowed: Omröstningsfas är stäng
       different_heading_assigned:
-        one: "You can only support investment projects in %{count} district"
-        other: "You can only support investment projects in %{count} districts"
+        one: "Du kan bara stödja investeringsprojekt i %{count} stadsdel"
+        other: "Du kan bara stödja investeringsprojekt i %{count} stadsdelar"
   welcome:
     feed:
       most_active:
@@ -789,60 +789,60 @@ sv:
         proposals: "Mest aktiva förslag"
         processes: "Öppna processer"
       see_all_debates: Se alla debatter
-      see_all_proposals: See all proposals
-      see_all_processes: See all processes
+      see_all_proposals: Se alla förslag
+      see_all_processes: Se alla processer
       process_label: Process
       see_process: Se process
     cards:
       title: Stjärnmarkerade
     recommended:
-      title: Recommendations that may interest you
-      help: "These recommendations are generated by the tags of the debates and proposals you are following."
+      title: Rekommenderat innehåll
+      help: "Rekommendationerna baseras på ämnen och förslag som du följer."
       debates:
         title: Rekommenderade debatter
-        btn_text_link: All recommended debates
+        btn_text_link: Alla rekommenderade debatter
       proposals:
         title: Rekommenderade förslag
-        btn_text_link: All recommended proposals
+        btn_text_link: Alla rekommenderade förslag
       budget_investments:
-        title: Recommended investments
+        title: Rekommenderade investeringar
       slide: "Se %{title}"
     verification:
-      i_dont_have_an_account: I don't have an account
-      i_have_an_account: I already have an account
-      question: Do you already have an account in %{org_name}?
+      i_dont_have_an_account: Jag har inget konto
+      i_have_an_account: Jag har redan ett konto
+      question: Har du redan ett konto på %{org_name}?
       title: Kontoverifiering
     welcome:
-      go_to_index: See proposals and debates
+      go_to_index: Se förslag och debatter
       title: Delta
       user_permission_debates: Delta i debatter
-      user_permission_info: With your account you can...
+      user_permission_info: Med ditt konto kan du...
       user_permission_proposal: Skapa nya förslag
-      user_permission_support_proposal: Support proposals*
-      user_permission_verify: To perform all the actions verify your account.
-      user_permission_verify_info: "* Only for users on Census."
+      user_permission_support_proposal: Stöd förslag
+      user_permission_verify: Bekräfta ditt konto för att kunna utföra alla handlingar.
+      user_permission_verify_info: "* Endast för användare skrivna i staden."
       user_permission_verify_my_account: Verifiera mitt konto
-      user_permission_votes: Participate on final voting
+      user_permission_votes: Delta i den slutgiltiga omröstningen
   invisible_captcha:
-    sentence_for_humans: "If you are human, ignore this field"
-    timestamp_error_message: "Sorry, that was too quick! Please resubmit."
+    sentence_for_humans: "Ignorera det här fältet om du är en människa"
+    timestamp_error_message: "Oj, det gick för snabbt! Var vänlig skicka in igen."
   related_content:
     title: "Relaterat innehåll"
     add: "Lägg till relaterat innehåll"
-    label: "Link to related content"
+    label: "Länk till relaterat innehåll"
     placeholder: "%{url}"
-    help: "You can add links of %{models} inside of %{org}."
+    help: "Du kan lägga till länkar till %{models} i %{org}."
     submit: "Lägg till"
-    error: "Link not valid. Remember to start with %{url}."
-    error_itself: "Link not valid. You cannot relate a content to itself."
-    success: "You added a new related content"
-    is_related: "¿Is it related content?"
+    error: "Länken är inte giltig. Kom ihåg att börja med %{url}."
+    error_itself: "Länken är inte giltig. Du kan inte länka till det egna inlägget."
+    success: "Du har lagt till nytt relaterat innehåll"
+    is_related: "Är det relaterat innehåll?"
     score_positive: "Ja"
     score_negative: "Nej"
     content_title:
       proposal: "Förslag"
       debate: "Debatt"
-      budget_investment: "Budget investment"
+      budget_investment: "Budgetinvesteringar"
   admin/widget:
     header:
       title: Administration

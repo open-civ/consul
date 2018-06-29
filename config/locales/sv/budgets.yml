@@ -13,7 +13,7 @@ sv:
         voted_info_html: "Du kan ändra din röst på någon tid förrän i slutet av den här fasen.<br> Inget behov av att spendera alla pengar du har tillgängliga."
         zero: Har du inte röstat i ett investeringsprojekt.
       reasons_for_not_balloting:
-        not_logged_in: Du måste %{signin} eller %{signup} för att kunna lämna en kommentar.
+        not_logged_in: Du behöver %{signin} eller %{signup} för att fortsätta.
         not_verified: Endast godkända användare kan rösta om investeringar; %{verify_account}.
         organization: Organisationer är inte tillåtna att rösta
         not_selected: Omarkerade investeringsprojekt som inte stöds
@@ -45,22 +45,22 @@ sv:
       section_header:
         icon_alt: Medborgarbudgetssymbol
         title: Medborgarbudget
-        help: Hjälp med medborgardeltagande budgetar
+        help: Hjälp med medborgarbudgetar
         all_phases: Se alla faser
       all_phases: Budget investerings faser
       map: Budget investeringars förslag ligger geografiskt
       investment_proyects: Lista över investeringsprojekt
       unfeasible_investment_proyects: Lista över ogenomförbara investeringsprojekt
       not_selected_investment_proyects: Lista över investeringsprojekt som inte valts till lottning
-      finished_budgets: Färdiga medborgarbudgetar
+      finished_budgets: Avslutade medborgarbudgetar
       see_results: Se resultat
       section_footer:
         title: Hjälp med medborgarbudgetar
         description: Med medborgarbudgeterna kan medborgarna hantera den kommunala budgeten genom att rösta på investeringsprojekt.
-        help_text_1: "Participatory budgets are processes in which citizens decide directly on what is spent part of the municipal budget. Any registered person over 16 years old can propose an investment project that is preselected in a phase of citizen supports."
-        help_text_2: "The most voted projects are evaluated and passed to a final vote in which they decide the actions to be carried out by the City Council once the municipal budgets of the next year are approved."
-        help_text_3: "The presentation of participatory budgeting projects takes place from January and over a period of one and a half months. To participate and propose proposals for the entire city and / or districts, you must sign up on %{org} and verify your account."
-        help_text_4: "To get as many supports and votes as possible, choose a descriptive and understandable headline for your project. Then you have a space to develop the approach of your proposal. Provide all the data and explanations, and even documents and images, to help other participants to better understand what you are proposing."
+        help_text_1: "Medborgarbudgetar är processer där medborgarna bestämmer direkt på en del av den kommunala budgeten. Varje registrerad person över 16 år kan lämna ett investeringsprojekt och få stöd från andra medborgare."
+        help_text_2: "Mest röstade projekt bedömas och går till en slutlig omröstning där medborgarna bestämmer vilka åtgärder ska genomföras av kommunfullmäktige när den kommunala budgeten för nästa år är godkänd."
+        help_text_3: "Förslagen till medborgarbudgeten presenteras från januari och en och en halvmånad framåt. För att delta och skapa förslag för hela staden och / eller en stadsdel, måste du registrera dig på %{org} och bekräfta ditt konto."
+        help_text_4: "Välj en beskrivande och tydlig rubrik för ditt förslag för att få så många röster som möjligt. I de följande fälten finns möjlighet att ge en detaljerad beskrivning av ditt förslag. Använd gärna dokument och bilder för att hjälpa andra att förstå ditt förslag."
     investments:
       form:
         tag_category_label: "Kategorier"
@@ -75,7 +75,7 @@ sv:
       index:
         title: Medborgarbudget
         unfeasible: Ogenomförbara investeringsprojekt
-        unfeasible_text: "The investments must meet a number of criteria (legality, concreteness, be the responsibility of the city, not exceed the limit of the budget) to be declared viable and reach the stage of final vote. All investments don't meet these criteria are marked as unfeasible and published in the following list, along with its report of infeasibility."
+        unfeasible_text: "Projekten måste uppfylla vissa kriterier (juridiskt giltiga, genomförbara, vara inom stadens ansvarsområde, inte överskrida budgeten) för att förklaras giltiga och nå den slutgiltiga omröstningen. De projekt som inte uppfyller kriterierna markeras som ogiltiga och visas i följande lista, tillsammans med en förklaring av bedömningen."
         by_heading: "Investeringsprojekt med område: %{heading}"
         search_form:
           button: Sök
@@ -95,10 +95,10 @@ sv:
           change_ballot: "Om du ändrar dig kan du ta bort dina röster i %{check_ballot} och starta igen."
           check_ballot_link: "kontrollera min omröstning"
           zero: Du har inte röstat något investeringsprojekt i denna grupp.
-          verified_only: "För att skapa en ny budget investeringar måste du %{verify}."
+          verified_only: "För att skapa ett nytt budgetförslag måste du %{verify}."
           verify_account: "verifiera ditt konto"
-          create: "Skapa en budget investering"
-          not_logged_in: "Om du vill skapa en ny budget investering måste du %{sign_in} eller %{sign_up}."
+          create: "Skapa ett budgetförslag"
+          not_logged_in: "Om du vill skapa ett nytt budgetförslag måste du %{sign_in} eller %{sign_up}."
           sign_in: "logga in"
           sign_up: "registrera sig"
           by_feasibility: Efter genomförbarhet
@@ -124,6 +124,7 @@ sv:
         milestones_tab: Milstolpar
         no_milestones: Har inte bestämda milstolpar
         milestone_publication_date: "Publicerade %{publication_date}"
+        milestone_status_changed: Investeringens status har ändrats till
         author: Författare
         project_unfeasible_html: 'Denna investering projektet <strong>har markerats som ej genomförbar</strong> och kommer inte gå till omröstningsfas.'
         project_not_selected_html: 'Denna investering projektet <strong>har inte valts</strong> för omröstningsfas.'
@@ -134,8 +135,8 @@ sv:
         already_supported: Du har redan stött detta investeringsprojekt. Dela det!
         support_title: Stödja detta projekt
         confirm_group:
-          one: "You can only support investments in %{count} district. If you continue you cannot change the election of your district. Are you sure?"
-          other: "You can only support investments in %{count} district. If you continue you cannot change the election of your district. Are you sure?"
+          one: "Du kan bara stödja projekt i %{count} stadsdel. Om du fortsätter kommer du inte kunna ändra valet av stadsdel. Vill du fortsätta?"
+          other: "Du kan bara stödja projekt i %{count} stadsdelar. Om du fortsätter kommer du inte kunna ändra valet av stadsdel. Vill du fortsätta?"
         supports:
           zero: Inga stöd
           one: 1 stöd

@@ -2,11 +2,11 @@ sv:
   helpers:
     page_entries_info:
       entry:
-        zero: Entries
-        one: Entry
-        other: Entries
+        zero: Inlägg
+        one: Inlägg
+        other: Inlägg
       more_pages:
-        display_entries: Displaying <strong>%{first}&nbsp;-&nbsp;%{last}</strong> of <strong>%{total} %{entry_name}</strong>
+        display_entries: Visar <strong>%{first}&nbsp;-&nbsp;%{last}</strong> av <strong>%{total} %{entry_name}</strong>
       one_page:
         display_entries:
           zero: "%{entry_name} kan inte hittas"
