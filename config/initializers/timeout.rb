@@ -1,1 +1,0 @@
-Rack::Timeout::Logger.update($stderr, ::Logger::ERROR)
