@@ -2,7 +2,7 @@ sv:
   legislation:
     annotations:
       comments:
-        see_all: Se alla
+        see_all: Visa alla
         see_complete: Visa förklaring
         comments_count:
           one: "%{count} kommentar"
@@ -11,7 +11,7 @@ sv:
           one: "%{count} svar"
           other: "%{count} svar"
         cancel: Avbryt
-        publish_comment: Publicera Commentar
+        publish_comment: Publicera kommentar
       form:
         phase_not_open: Fasen är inte öppen
         login_to_comment: Du behöver %{signin} eller %{signup} för att kunna kommentera.
@@ -20,7 +20,7 @@ sv:
       index:
         title: Kommentarer
         comments_about: Kommentarer om
-        see_in_context: Se i sammanhang
+        see_in_context: Visa i sammanhang
         comments_count:
           one: "%{count} kommentar"
           other: "%{count} kommentarer"
@@ -28,21 +28,21 @@ sv:
         title: Kommentera
       version_chooser:
         seeing_version: Kommentarer för version
-        see_text: Se utkast
+        see_text: Visa utkast
     draft_versions:
       changes:
         title: Ändringar
         seeing_changelog_version: Sammanfattning av ändringar
-        see_text: Se utkast
+        see_text: Visa utkast
       show:
         loading_comments: Laddar kommentarer
         seeing_version: Du visar ett utkast
         select_draft_version: Välj utkast
-        select_version_submit: se
+        select_version_submit: visa
         updated_at: uppdaterad den %{date}
         see_changes: visa sammanfattning av ändringar
-        see_comments: Se alla kommentarer
-        text_toc: Index
+        see_comments: Visa alla kommentarer
+        text_toc: Innehållsförteckning
         text_body: Text
         text_comments: Kommentarer
     processes:
@@ -56,13 +56,13 @@ sv:
         empty_questions: Det finns inga frågor
         participate: Delta i debatten
       index:
-        filter: Filter
+        filter: Filtrera
         filters:
-          open: Öppna processer
+          open: Pågående processer
           next: Nästa
-          past: Tidigare
-        no_open_processes: Det finns inga öppna processer
-        no_next_processes: Inga planerade processer
+          past: Föregående
+        no_open_processes: Det finns inga pågående processer
+        no_next_processes: Det finns inga planerade processer
         no_past_processes: Det finns inga avslutade processer
         section_header:
           icon_alt: Ikon för lagstiftande process
@@ -79,8 +79,8 @@ sv:
       phase_empty:
         empty: Inget har publicerats än
       process:
-        see_latest_comments: Se de senaste kommentarerna
-        see_latest_comments_title: Kommentera denna process
+        see_latest_comments: Visa de senaste kommentarerna
+        see_latest_comments_title: Kommentera till den här processen
       shared:
         key_dates: Viktiga datum
         debate_dates: Debatt
@@ -94,7 +94,7 @@ sv:
         comments_title: Öppna svar
         comments_closed: Avslutad fas
         form:
-          leave_comment: Lämna ditt svar
+          leave_comment: Svara
       question:
         comments:
           zero: Inga kommentarer
@@ -104,16 +104,16 @@ sv:
       show:
         answer_question: Skicka svar
         next_question: Nästa fråga
-        first_question: Först fråga
+        first_question: Första frågan
         share: Dela
         title: Kollaborativ lagstiftningsprocess
       participation:
         phase_not_open: Denna fas är inte öppen
         organizations: Organisationer får inte delta i debatten
         signin: Logga in
-        signup: Registrera sig
+        signup: Registrera dig
         unauthenticated: Du behöver %{signin} eller %{signup} för att kunna delta.
-        verified_only: Endast verifierade användare kan delta %{verify_account}.
+        verified_only: Endast verifierade användare kan delta, %{verify_account}.
         verify_account: verifiera ditt konto
         debate_phase_not_open: Diskussionsfasen har avslutats, och svar kan inte längre tas emot
     shared:

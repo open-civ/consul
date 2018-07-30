@@ -8,19 +8,19 @@ sv:
         one: "Budget"
         other: "Budgetar"
       budget/investment:
-        one: "Investering"
-        other: "Investeringar"
+        one: "Budgetförslag"
+        other: "Budgetförslag"
       budget/investment/milestone:
-        one: "milstolp"
+        one: "milstolpe"
         other: "milstolpar"
       budget/investment/status:
-        one: "Investeringsstatus"
-        other: "Investeringsstatus"
+        one: "Budgetförslagets status"
+        other: "Budgetförslagens status"
       comment:
         one: "Kommentar"
         other: "Kommentarer"
       debate:
-        one: "Debattera"
+        one: "Debatt"
         other: "Debatter"
       tag:
         one: "Tagg"
@@ -62,8 +62,8 @@ sv:
         one: "Medborgarförslag"
         other: "Medborgarförslag"
       spending_proposal:
-        one: "Investeringsprojekt"
-        other: "Investeringsprojekt"
+        one: "Budgetförslag"
+        other: "Budgetförslag"
       site_customization/page:
         one: Anpassad sida
         other: Anpassade sidor
@@ -77,8 +77,8 @@ sv:
         one: "Process"
         other: "Processer"
       legislation/draft_versions:
-        one: "Utkast version"
-        other: "Utkast versioner"
+        one: "Utkastversion"
+        other: "Utkastversioner"
       legislation/draft_texts:
         one: "Utkast"
         other: "Utkast"
@@ -99,7 +99,7 @@ sv:
         other: "Bilder"
       topic:
         one: "Ämne"
-        other: "Ämne"
+        other: "Ämnen"
       poll:
         one: "Omröstning"
         other: "Omröstningar"
@@ -113,7 +113,7 @@ sv:
         description_balloting: "Beskrivning under omröstningsfasen"
         description_reviewing_ballots: "Beskrivning när röstsedlarna granskas"
         description_finished: "Beskrivning när budgeten är klar"
-        phase: "Etapp"
+        phase: "Fas"
         currency_symbol: "Valuta"
       budget/investment:
         heading_id: "Rubrik"
@@ -121,15 +121,15 @@ sv:
         description: "Beskrivning"
         external_url: "Länk till ytterligare dokumentation"
         administrator_id: "Administratör"
-        location: "Plats (valfritt)"
-        organization_name: "Om du föreslår i namn av en kollektiv/organisation, eller åt fler personers vägnar, skriv dess namn"
-        image: "Illustration av förslaget"
+        location: "Plats (frivilligt fält)"
+        organization_name: "Organisationen eller gruppen i vars namn du lämnar förslaget"
+        image: "Förklarande bild till förslaget"
         image_title: "Bildtext"
       budget/investment/milestone:
-        status_id: "Nuvarande investeringsstatus (frivilligt fält)"
+        status_id: "Nuvarande status för budgetförslag (frivilligt fält)"
         title: "Titel"
         description: "Beskrivning (frivilligt fält om projektets status har ställts in)"
-        publication_date: "Datum för offentliggörande"
+        publication_date: "Publiceringsdatum"
       budget/investment/status:
         name: "Namn"
         description: "Beskrivning (frivilligt fält)"
@@ -141,13 +141,13 @@ sv:
         body: "Kommentar"
         user: "Användare"
       debate:
-        author: "Författare"
-        description: "Åsikt"
+        author: "Debattör"
+        description: "Inlägg"
         terms_of_service: "Användarvillkor"
-        title: "Titel"
+        title: "Rubrik"
       proposal:
-        author: "Författare"
-        title: "Titel"
+        author: "Förslagslämnare"
+        title: "Rubrik"
         question: "Fråga"
         description: "Beskrivning"
         terms_of_service: "Användarvillkor"
@@ -164,14 +164,14 @@ sv:
         redeemable_code: "Mottagen bekräftelsekod"
       organization:
         name: "Organisationens namn"
-        responsible_name: "Gruppens talesperson"
+        responsible_name: "Representant för gruppen"
       spending_proposal:
         administrator_id: "Administratör"
         association_name: "Föreningens namn"
         description: "Beskrivning"
         external_url: "Länk till ytterligare dokumentation"
-        geozone_id: "Användningsområde"
-        title: "Titel"
+        geozone_id: "Verksamhetsområde"
+        title: "Rubrik"
       poll:
         name: "Namn"
         starts_at: "Startdatum"
@@ -191,12 +191,12 @@ sv:
       site_customization/page:
         content: Innehåll
         created_at: Skapad den
-        subtitle: Undertitel
-        slug: Orsak
+        subtitle: Underrubrik
+        slug: URL
         status: Status
-        title: Titel
+        title: Rubrik
         updated_at: Uppdaterad den
-        more_info_flag: Visa i hjälpsida
+        more_info_flag: Visa i hjälpsidor
         print_content_flag: Skriv ut innehåll
         locale: Språk
       site_customization/image:
@@ -229,7 +229,7 @@ sv:
         title: Titel
         question_options: Alternativ
       legislation/question_option:
-        value: Värde
+        value: Kostnad
       legislation/annotation:
         text: Kommentar
       document:
@@ -250,7 +250,7 @@ sv:
         from: Från
         body: E-postmeddelande
       widget/card:
-        label: Etikett (tillval)
+        label: Etikett (frivilligt fält)
         title: Titel
         description: Beskrivning
         link_text: Länktext
@@ -274,27 +274,27 @@ sv:
         image:
           attributes:
             attachment:
-              min_image_width: "Bilden måste ha en bredd om minst %{required_min_width} px"
-              min_image_height: "Bilden måste ha en höjd om minst %{required_min_height} px"
+              min_image_width: "Bilden måste vara minst %{required_min_width} px bred"
+              min_image_height: "Bilden måste vara minst %{required_min_height} px hög"
         newsletter:
           attributes:
             segment_recipient:
-              invalid: "Användarmottagarens segment är ogiltigt"
+              invalid: "Mottagardelen innehåller fel"
         map_location:
           attributes:
             map:
-              invalid: Kartläge kan inte stå tomt. Placera en markör eller markera kryssrutan om den geografiska positionen inte är nödvändig
+              invalid: Geografisk position kan inte lämnas tomt. Placera en markör eller markera kryssrutan om geografisk position inte är tillämpbart
         poll/voter:
           attributes:
             document_number:
-              not_in_census: "Finns inte i folkbokföringen"
+              not_in_census: "Finns inte i adressregistret"
               has_voted: "Användaren har redan röstat"
         legislation/process:
           attributes:
             end_date:
               invalid_date_range: måste vara på eller efter startdatum
             debate_end_date:
-              invalid_date_range: måste vara på eller efter startdatum för diskussionen
+              invalid_date_range: måste vara på eller efter startdatum för debatten
             allegations_end_date:
               invalid_date_range: måste vara på eller efter startdatum för utvärderingen
         proposal:
@@ -308,11 +308,11 @@ sv:
         proposal_notification:
           attributes:
             minimum_interval:
-              invalid: "Du måste ha minst %{interval} dagar mellan notifikationer"
+              invalid: "Du måste ha minst %{interval} dagar mellan meddelanden"
         signature:
           attributes:
             document_number:
-              not_in_census: 'Ej bekräftad i folkbokföringen'
+              not_in_census: 'Ej verifierad adress'
               already_voted: 'Har redan röstat om förslaget'
         site_customization/page:
           attributes:
@@ -326,9 +326,9 @@ sv:
         comment:
           attributes:
             valuation:
-              cannot_comment_valuation: 'Du kan inte kommentera en värdering'
+              cannot_comment_valuation: 'Du kan inte kommentera en kostnadsberäkning'
       messages:
-        record_invalid: "Kontrollfel: %{errors}"
+        record_invalid: "Felmeddelanden: %{errors}"
         restrict_dependent_destroy:
-          has_one: "Kan inte radera post eftersom den beroende posten %{record} finns"
-          has_many: "Kan inte radera post eftersom den beroende posten %{record} finns"
+          has_one: "Inlägget kan inte raderas eftersom det hänger ihop med inlägget %{record}"
+          has_many: "Inlägget kan inte raderas eftersom det hänger ihop med inlägget %{record}"

@@ -4,21 +4,21 @@ sv:
       title: Gemenskap
       description:
         proposal: Delta i gemenskapen kring detta förslag.
-        investment: Delta i gemenskapen kring denna investering.
+        investment: Delta i diskussionen om budgetförslaget.
       button_to_access: Gå med i gemenskapen
     show:
       title:
         proposal: Gemenskap kring förslaget
-        investment: Gemenskap kring investeringen
+        investment: Diskussion om budgetförslaget
       description:
         proposal: Delta i gemenskapen kring förslaget. En aktiv gemenskap kan förbättra innehållet i förslaget, göra det mer känt och öka dess stöd.
-        investment: Delta i gemenskapen kring investeringen. En aktiv gemenskap kan förbättra innehållet i investeringen, göra det mer känt och öka dess stöd.
+        investment: Delta i diskussionen om budgetförslaget. En aktiv diskussion kan leda till förbättringar av förslaget, ge det större spridning och ökat stöd.
       create_first_community_topic:
         first_theme_not_logged_in: Inga ämnen finns tillgängliga, skapa det första.
         first_theme: Skapa det första ämnet i gemenskapen
         sub_first_theme: "För att skapa ett tema behöver du %{sign_in} eller %{sign_up}."
         sign_in: "logga in"
-        sign_up: "registrera sig"
+        sign_up: "registrera dig"
       tab:
         participants: Deltagare
       sidebar:
@@ -31,7 +31,7 @@ sv:
           zero: Inga kommentarer
           one: 1 kommentar
           other: "%{count} kommentarer"
-      author: Författare
+      author: Förslagslämnare
       back: Tillbaka till %{community} %{proposal}
     topic:
       create: Skapa ett ämne

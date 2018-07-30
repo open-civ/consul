@@ -14,7 +14,7 @@ sv:
           moderate: Moderera
         hide_comments: Dölj kommentarer
         ignore_flags: Markera som läst
-        order: Beställ
+        order: Sortera efter
         orders:
           flags: Mest flaggade
           newest: Senaste
@@ -34,18 +34,18 @@ sv:
         headers:
           debate: Diskutera
           moderate: Moderera
-        hide_debates: Göm diskussioner
+        hide_debates: Dölj debatter
         ignore_flags: Markera som läst
-        order: Ordning
+        order: Sortera efter
         orders:
           created_at: Senaste
           flags: Mest flaggade
-        title: Diskussioner
+        title: Debatter
     header:
       title: Moderering
     menu:
       flagged_comments: Kommentarer
-      flagged_debates: Diskussioner
+      flagged_debates: Debatter
       proposals: Förslag
       users: Blockera användare
     proposals:
@@ -55,7 +55,7 @@ sv:
         filter: Filtrera
         filters:
           all: Alla
-          pending_flag_review: Pågående granskning
+          pending_flag_review: Inväntar granskning
           with_ignored_flag: Markera som läst
         headers:
           moderate: Moderera
@@ -69,9 +69,9 @@ sv:
         title: Förslag
     users:
       index:
-        hidden: Blockerad
+        hidden: Blockerade
         hide: Blockera
         search: Sök
         search_placeholder: e-postadress eller namn på användare
         title: Blockera användare
-      notice_hide: Användaren blockerades. Alla användarens diskussioner och kommentarer har dolts.
+      notice_hide: Användaren blockerades. Alla användarens inlägg och kommentarer har dolts.
