@@ -46,7 +46,9 @@ sv:
     menu:
       flagged_comments: Kommentarer
       flagged_debates: Debatter
+      flagged_investments: Budgetförslag
       proposals: Förslag
+      proposal_notifications: Aviseringar om förslag
       users: Blockera användare
     proposals:
       index:
@@ -67,6 +69,44 @@ sv:
           created_at: Senaste
           flags: Mest flaggade
         title: Förslag
+    budget_investments:
+      index:
+        block_authors: Blockera förslagslämnare
+        confirm: Är du säker?
+        filter: Filtrera
+        filters:
+          all: Alla
+          pending_flag_review: Avvaktar
+          with_ignored_flag: Markerad som läst
+        headers:
+          moderate: Moderera
+          budget_investment: Budgetförslag
+        hide_budget_investments: Dölj budgetförslag
+        ignore_flags: Markera som läst
+        order: Sortera efter
+        orders:
+          created_at: Senaste
+          flags: Mest flaggade
+        title: Budgetförslag
+    proposal_notifications:
+      index:
+        block_authors: Blockera förslagslämnare
+        confirm: Är du säker?
+        filter: Filtrera
+        filters:
+          all: Alla
+          pending_review: Inväntar granskning
+          ignored: Markera som läst
+        headers:
+          moderate: Moderera
+          proposal_notification: Avisering om förslag
+        hide_proposal_notifications: Dölj förslag
+        ignore_flags: Markera som läst
+        order: Sortera efter
+        orders:
+          created_at: Senaste
+          moderated: Modererad
+        title: Förslagsaviseringar
     users:
       index:
         hidden: Blockerade

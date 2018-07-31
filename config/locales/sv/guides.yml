@@ -4,15 +4,15 @@ sv:
     subtitle: "Välj vad du vill skapa"
     budget_investment:
       title: "Ett budgetförslag"
-      feature_1_html: "Idéer om hur att spendera en del av <strong>kommunens budget</strong>"
+      feature_1_html: "Förslag för hur delar av<strong>kommunens budget</strong> ska spenderas"
       feature_2_html: "Budgetförslag tas emot <strong>från januari och mars</strong>"
-      feature_3_html: "Om det får stöd, är genomförbart och handlar om någonting som kommunen har ansvar på, då går det till omröstningsfas"
+      feature_3_html: "Om det får tillräckligt med stöd, är genomförbart och inom stadens ansvarsområde, går det vidare till omröstning"
       feature_4_html: "Om medborgarna godkänner projekten blir de verklighet"
       new_button: Jag vill skapa ett budgetförslag
     proposal:
       title: "Ett medborgarförslag"
-      feature_1_html: "Idéer om någon åtgärd kommunfullmäktigen kan ta"
-      feature_2_html: "Behöver <strong>%{votes} stöd</strong> i %{org} för att gå till omröstning"
-      feature_3_html: "Aktivera när som helst, du har <strong>ett år</strong> för att få stöden"
-      feature_4_html: "Om godkänd i en omröstning accepterar kommunfullmäktige förslaget"
+      feature_1_html: "Idéer till åtgärder som kommunfullmäktige kan genomföra"
+      feature_2_html: "Behöver <strong>%{votes} stöd</strong> på %{org} för att gå till omröstning"
+      feature_3_html: "Aktivera när som helst, du har <strong>ett år</strong> på dig att samla stöd"
+      feature_4_html: "Om det godkänns i en omröstning accepterar kommunfullmäktige förslaget"
       new_button: Jag vill skapa ett förslag

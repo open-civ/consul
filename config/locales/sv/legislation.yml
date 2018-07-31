@@ -65,15 +65,12 @@ sv:
         no_next_processes: Det finns inga planerade processer
         no_past_processes: Det finns inga avslutade processer
         section_header:
-          icon_alt: Ikon för lagstiftande process
-          title: Lagstiftningsprocesser
-          help: Hjälp med lagstiftande processer
+          icon_alt: Ikon för planeringsprocess
+          title: Planeringsprocesser
+          help: Hjälp med planeringsprocesser
         section_footer:
-          title: Hjälp med lagstiftande processer
+          title: Hjälp med planeringsprocesser
           description: Delta i debatter och processer inför beslut i staden. Dina åsikter kommer att tas i beaktande av kommunfullmäktige.
-          help_text_1: "Kommunfullmäktige ger möjlighet för medborgare att diskutera och delta i utformandet av policies och förslag till beslut för staden."
-          help_text_2: "Alla som är registrerade på %{org} kan delta och bidra med synpunkter inför nya förslag och beslut för staden. Dina kommentarer analyseras av relevant förvaltning och tas i beaktande i utformandet av nya förslag."
-          help_text_3: "Kommunfullmäktige kan också starta processer för att få synpunkter på förslag."
       phase_not_open:
         not_open: Fasen är inte öppen ännu
       phase_empty:
@@ -85,7 +82,7 @@ sv:
         key_dates: Viktiga datum
         debate_dates: Debatt
         draft_publication_date: Publiceringsdatum för utkast
-        allegations_dates: Påståenden
+        allegations_dates: Kommentera utkast
         result_publication_date: Publiceringsdatum för resultat
         proposals_dates: Förslag
     questions:
@@ -106,7 +103,7 @@ sv:
         next_question: Nästa fråga
         first_question: Första frågan
         share: Dela
-        title: Kollaborativ lagstiftningsprocess
+        title: Kollaborativ planeringsprocess
       participation:
         phase_not_open: Denna fas är inte öppen
         organizations: Organisationer får inte delta i debatten

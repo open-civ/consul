@@ -29,7 +29,7 @@ sv:
         subject: "Instruktioner för att låsa upp kontot"
     omniauth_callbacks:
       failure: "Du godkändes inte som %{kind} eftersom ”%{reason}”."
-      success: "Framgångsrikt identifierat som %{kind}."
+      success: "Identifierad som %{kind}."
     passwords:
       no_token: "Du kan inte komma åt denna sida utom genom en länk för återställning av lösenord. Om du har kommit hit genom en länk för återställning av lösenord, kontrollera att webbadressen är komplett."
       send_instructions: "Du kommer strax att få ett e-postmeddelande med instruktioner för att återställa ditt lösenord."
@@ -37,7 +37,7 @@ sv:
       updated: "Ditt lösenord har ändrats."
       updated_not_active: "Ditt lösenord har ändrats."
     registrations:
-      destroyed: "Hejdå! Ditt konto har avslutats, men vi hoppas att få se dig igen snart!"
+      destroyed: "Hejdå! Ditt konto har avslutats. Vi hoppas på att snart få se dig igen."
       signed_up: "Välkommen! Du har autentiserats."
       signed_up_but_inactive: "Din registrering lyckades, men du behöver aktivera ditt konto innan du kan logga in."
       signed_up_but_locked: "Din registrering lyckades, men du behöver aktivera ditt konto innan du kan logga in."

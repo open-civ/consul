@@ -41,8 +41,8 @@ sv:
         one: "Bedömningsgrupp"
         other: "Bedömningsgrupper"
       manager:
-        one: "Chef"
-        other: "Chefer"
+        one: "Medborgarguide"
+        other: "Medborgarguider"
       newsletter:
         one: "Nyhetsbrev"
         other: "Nyhetsbrev"
@@ -53,11 +53,11 @@ sv:
         one: "Organisation"
         other: "Organisationer"
       poll/booth:
-        one: "röstbås"
-        other: "röstbås"
+        one: "röststation"
+        other: "röststationer"
       poll/officer:
-        one: "valarbetare"
-        other: "valarbetare"
+        one: "funktionär"
+        other: "funktionärer"
       proposal:
         one: "Medborgarförslag"
         other: "Medborgarförslag"
@@ -103,20 +103,23 @@ sv:
       poll:
         one: "Omröstning"
         other: "Omröstningar"
+      proposal_notification:
+        one: "Förslagsavisering"
+        other: "Förslagsaviseringar"
     attributes:
       budget:
         name: "Namn"
-        description_accepting: "Beskrivning under presentationsfasen"
-        description_reviewing: "Beskrivning under granskningsfasen"
-        description_selecting: "Beskrivning under valfasen"
-        description_valuating: "Beskrivning under utvärderingsetappen"
-        description_balloting: "Beskrivning under omröstningsfasen"
-        description_reviewing_ballots: "Beskrivning när röstsedlarna granskas"
-        description_finished: "Beskrivning när budgeten är klar"
+        description_accepting: "Beskrivning av fasen för förslagsinlämning"
+        description_reviewing: "Beskrivning av granskningsfasen"
+        description_selecting: "Beskrivning av urvalsfasen"
+        description_valuating: "Beskrivning av kostnadsberäkningsfasen"
+        description_balloting: "Beskrivning av omröstningsfasen"
+        description_reviewing_ballots: "Beskrivning av fasen för granskning av röster"
+        description_finished: "Beskrivning för när budgeten är avslutad"
         phase: "Fas"
         currency_symbol: "Valuta"
       budget/investment:
-        heading_id: "Rubrik"
+        heading_id: "Underområde"
         title: "Titel"
         description: "Beskrivning"
         external_url: "Länk till ytterligare dokumentation"
@@ -134,7 +137,7 @@ sv:
         name: "Namn"
         description: "Beskrivning (frivilligt fält)"
       budget/heading:
-        name: "Rubriknamn"
+        name: "Underområde"
         price: "Kostnad"
         population: "Befolkning"
       comment:
@@ -144,10 +147,10 @@ sv:
         author: "Debattör"
         description: "Inlägg"
         terms_of_service: "Användarvillkor"
-        title: "Rubrik"
+        title: "Titel"
       proposal:
         author: "Förslagslämnare"
-        title: "Rubrik"
+        title: "Titel"
         question: "Fråga"
         description: "Beskrivning"
         terms_of_service: "Användarvillkor"
@@ -159,8 +162,8 @@ sv:
         password: "Lösenord"
         current_password: "Nuvarande lösenord"
         phone_number: "Telefonnummer"
-        official_position: "Tjänsteman"
-        official_level: "Tjänstemannanivå"
+        official_position: "Titel"
+        official_level: "Tjänstepersonnivå"
         redeemable_code: "Mottagen bekräftelsekod"
       organization:
         name: "Organisationens namn"
@@ -170,8 +173,8 @@ sv:
         association_name: "Föreningens namn"
         description: "Beskrivning"
         external_url: "Länk till ytterligare dokumentation"
-        geozone_id: "Verksamhetsområde"
-        title: "Rubrik"
+        geozone_id: "Område"
+        title: "Titel"
       poll:
         name: "Namn"
         starts_at: "Startdatum"
@@ -194,7 +197,7 @@ sv:
         subtitle: Underrubrik
         slug: URL
         status: Status
-        title: Rubrik
+        title: Titel
         updated_at: Uppdaterad den
         more_info_flag: Visa i hjälpsidor
         print_content_flag: Skriv ut innehåll
@@ -216,8 +219,8 @@ sv:
         debate_start_date: Startdatum för diskussion
         debate_end_date: Slutdatum för diskussion
         draft_publication_date: Publiceringsdatum för utkast
-        allegations_start_date: Startdatum för utvärdering
-        allegations_end_date: Slutdatum för utvärdering
+        allegations_start_date: Startdatum för att kommentera utkast
+        allegations_end_date: Slutdatum för att kommentera utkast
         result_publication_date: Publiceringsdatum för resultat
       legislation/draft_version:
         title: Titel på versionen
@@ -280,6 +283,10 @@ sv:
           attributes:
             segment_recipient:
               invalid: "Mottagardelen innehåller fel"
+        admin_notification:
+          attributes:
+            segment_recipient:
+              invalid: "Mottagardelen innehåller fel"
         map_location:
           attributes:
             map:
@@ -296,7 +303,7 @@ sv:
             debate_end_date:
               invalid_date_range: måste vara på eller efter startdatum för debatten
             allegations_end_date:
-              invalid_date_range: måste vara på eller efter startdatum för utvärderingen
+              invalid_date_range: måste vara på eller efter startdatum för fasen för att kommentera utkast
         proposal:
           attributes:
             tag_list:
@@ -308,7 +315,7 @@ sv:
         proposal_notification:
           attributes:
             minimum_interval:
-              invalid: "Du måste ha minst %{interval} dagar mellan meddelanden"
+              invalid: "Du måste ha minst %{interval} dagar mellan aviseringar"
         signature:
           attributes:
             document_number:
