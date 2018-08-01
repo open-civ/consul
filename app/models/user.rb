@@ -36,6 +36,8 @@ class User < ActiveRecord::Base
 
   validates :username, presence: true, if: :username_required?
   validates :username, uniqueness: { scope: :registering_with_oauth }, if: :username_required?
+  validates :personal_number, presence: true, if: :personal_number_required?
+  validates :personal_number, uniqueness: true, if: :personal_number_required?
   validates :document_number, uniqueness: { scope: :document_type }, allow_nil: true
 
   validate :validate_username_length
@@ -246,6 +248,14 @@ class User < ActiveRecord::Base
     @@username_max_length ||= columns.find { |c| c.name == 'username' }.limit || 60
   end
 
+  def self.personal_number_min_length
+    @@personal_number_min_length = 12
+  end
+
+  def self.personal_number_max_length
+    @@personal_number_max_length = 12
+  end
+
   def self.minimum_required_age
     (Setting['min_age_to_participate'] || 16).to_i
   end
@@ -261,6 +271,10 @@ class User < ActiveRecord::Base
   end
 
   def username_required?
+    !organization? && !erased?
+  end
+
+  def personal_number_required?
     !organization? && !erased?
   end
 
@@ -321,12 +335,13 @@ class User < ActiveRecord::Base
     public_activity? ? comments : User.none
   end
 
-  # overwritting of Devise method to allow login using email OR username
+  # overwritting of Devise method to allow login using email OR username OR personal number
   def self.find_for_database_authentication(warden_conditions)
     conditions = warden_conditions.dup
     login = conditions.delete(:login)
     where(conditions.to_hash).where(["lower(email) = ?", login.downcase]).first ||
-    where(conditions.to_hash).where(["username = ?", login]).first
+    where(conditions.to_hash).where(["username = ?", login]).first ||
+    where(conditions.to_hash).where(["personal_number = ?", login]).first
   end
 
   def interests
@@ -346,6 +361,16 @@ class User < ActiveRecord::Base
         attributes: :username,
         maximum: User.username_max_length)
       validator.validate(self)
+    end
+
+    def validate_personal_number_length
+      if personal_number_required?
+        validator = ActiveModel::Validations::LengthValidator.new(
+          attributes: :personal_number,
+          minimum: User.personal_number_min_length,
+          maximum: User.personal_number_max_length)
+        validator.validate(self)
+      end
     end
 
 end

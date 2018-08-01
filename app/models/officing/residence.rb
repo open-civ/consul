@@ -36,7 +36,8 @@ class Officing::Residence
         erased_at:             Time.current,
         password:              random_password,
         terms_of_service:      '1',
-        email:                 nil
+        email:                 nil,
+        personal_number:       nil
       }
       self.user = User.create!(user_params)
     end

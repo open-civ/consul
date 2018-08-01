@@ -28,6 +28,7 @@ feature 'Registration form' do
     visit new_user_registration_path(use_redeemable_code: 'true')
 
     fill_in 'user_username',              with: "NewUserWithCode77"
+    fill_in 'user_personal_number',       with: "199102235678"
     fill_in 'user_email',                 with: "new@consul.dev"
     fill_in 'user_password',              with: "password"
     fill_in 'user_password_confirmation', with: "password"
@@ -47,6 +48,7 @@ feature 'Registration form' do
     visit new_user_registration_path
 
     fill_in 'user_username',              with: "robot"
+    fill_in 'user_personal_number',       with: '199102235678'
     fill_in 'user_family_name',           with: 'This is the honeypot field'
     fill_in 'user_email',                 with: 'robot@robot.com'
     fill_in 'user_password',              with: 'destroyallhumans'
@@ -65,6 +67,7 @@ feature 'Registration form' do
     visit new_user_registration_path
 
     fill_in 'user_username',              with: "robot"
+    fill_in 'user_personal_number',       with: '199102235679'
     fill_in 'user_family_name',           with: 'This is the honeypot field'
     fill_in 'user_email',                 with: 'robot@robot.com'
     fill_in 'user_password',              with: 'destroyallhumans'

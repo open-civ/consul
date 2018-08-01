@@ -3,13 +3,14 @@ section "Creating Users" do
     password = '12345678'
     User.create!(
       username:               username,
+      date_of_birth:          date_of_birth,
+      personnummer:           unique_personnummer,
       email:                  email,
       password:               password,
       password_confirmation:  password,
       confirmed_at:           Time.current,
       terms_of_service:       "1",
       gender:                 ['Male', 'Female'].sample,
-      date_of_birth:          rand((Time.current - 80.years)..(Time.current - 16.years)),
       public_activity:        (rand(1..100) > 30)
     )
   end
@@ -18,6 +19,16 @@ section "Creating Users" do
     @document_number ||= 12345678
     @document_number += 1
     "#{@document_number}#{[*'A'..'Z'].sample}"
+  end
+
+  def date_of_birth
+    @date = rand((Time.current - 80.years)..(Time.current - 16.years))
+    @date
+  end
+
+  def unique_personnummer
+    @number = Faker::Number.between(1000, 9999)
+    "#{@date.strftime("%Y%m%d")}#{@number}"
   end
 
   admin = create_user('admin@consul.dev', 'admin')

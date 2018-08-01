@@ -51,6 +51,7 @@ class Signature < ActiveRecord::Base
       password: random_password,
       terms_of_service: '1',
       email: nil,
+      personal_number: nil,
       date_of_birth: @census_api_response.date_of_birth,
       gender: @census_api_response.gender,
       geozone: Geozone.where(census_code: @census_api_response.district_code).first

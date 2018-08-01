@@ -5,6 +5,7 @@ module Users
     click_link 'Register'
 
     fill_in 'user_username',              with: "Manuela Carmena #{rand(99999)}"
+    fill_in 'user_personnummer',          with: "195704139267"
     fill_in 'user_email',                 with: email
     fill_in 'user_password',              with: password
     fill_in 'user_password_confirmation', with: password

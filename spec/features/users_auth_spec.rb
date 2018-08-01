@@ -11,6 +11,7 @@ feature 'Users' do
         click_link 'Register'
 
         fill_in 'user_username',              with: 'Manuela Carmena'
+        fill_in 'user_personal_number',       with: '199105249624'
         fill_in 'user_email',                 with: 'manuela@consul.dev'
         fill_in 'user_password',              with: 'judgementday'
         fill_in 'user_password_confirmation', with: 'judgementday'
@@ -38,7 +39,7 @@ feature 'Users' do
     context 'Sign in' do
 
       scenario 'sign in with email' do
-        create(:user, email: 'manuela@consul.dev', password: 'judgementday')
+        create(:user, personal_number: '199105249625', email: 'manuela@consul.dev', password: 'judgementday')
 
         visit '/'
         click_link 'Sign in'
@@ -50,7 +51,7 @@ feature 'Users' do
       end
 
       scenario 'Sign in with username' do
-        create(:user, username: '👻👽👾🤖', email: 'ash@nostromo.dev', password: 'xenomorph')
+        create(:user, personal_number: '199105249626', username: '👻👽👾🤖', email: 'ash@nostromo.dev', password: 'xenomorph')
 
         visit '/'
         click_link 'Sign in'
@@ -62,8 +63,8 @@ feature 'Users' do
       end
 
       scenario 'Avoid username-email collisions' do
-        u1 = create(:user, username: 'Spidey', email: 'peter@nyc.dev', password: 'greatpower')
-        u2 = create(:user, username: 'peter@nyc.dev', email: 'venom@nyc.dev', password: 'symbiote')
+        u1 = create(:user, personal_number: '199105249627', username: 'Spidey', email: 'peter@nyc.dev', password: 'greatpower')
+        u2 = create(:user, personal_number: '199105249628', username: 'peter@nyc.dev', email: 'venom@nyc.dev', password: 'symbiote')
 
         visit '/'
         click_link 'Sign in'
@@ -206,7 +207,7 @@ feature 'Users' do
       end
 
       scenario 'Sign in, user was already signed up with OAuth' do
-        user = create(:user, email: 'manuela@consul.dev', password: 'judgementday')
+        user = create(:user, personal_number: '199105249629', email: 'manuela@consul.dev', password: 'judgementday')
         create(:identity, uid: '12345', provider: 'twitter', user: user)
         OmniAuth.config.add_mock(:twitter, twitter_hash)
 
@@ -225,7 +226,7 @@ feature 'Users' do
       end
 
       scenario 'Try to register with the username of an already existing user' do
-        create(:user, username: 'manuela', email: 'manuela@consul.dev', password: 'judgementday')
+        create(:user, personal_number: '199105249630', username: 'manuela', email: 'manuela@consul.dev', password: 'judgementday')
         OmniAuth.config.add_mock(:twitter, twitter_hash_with_verified_email)
 
         visit '/'
@@ -253,7 +254,7 @@ feature 'Users' do
       end
 
       scenario 'Try to register with the email of an already existing user, when no email was provided by oauth' do
-        create(:user, username: 'peter', email: 'manuela@example.com')
+        create(:user, personal_number: '199105249631', username: 'peter', email: 'manuela@example.com')
         OmniAuth.config.add_mock(:twitter, twitter_hash)
 
         visit '/'
@@ -288,7 +289,7 @@ feature 'Users' do
       end
 
       scenario 'Try to register with the email of an already existing user, when an unconfirmed email was provided by oauth' do
-        create(:user, username: 'peter', email: 'manuelacarmena@example.com')
+        create(:user, username: 'peter', personal_number: '199105249632', email: 'manuelacarmena@example.com')
         OmniAuth.config.add_mock(:twitter, twitter_hash_with_email)
 
         visit '/'
