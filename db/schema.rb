@@ -1186,11 +1186,12 @@ ActiveRecord::Schema.define(version: 20180801120648) do
     t.boolean  "public_interests",                          default: false
     t.boolean  "recommended_debates",                       default: true
     t.boolean  "recommended_proposals",                     default: true
-    t.string   "personal_number"
+    t.string   "personal_number",                           default: ""
   end
 
   add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["personal_number"], name: "index_users_on_personal_number", unique: true, using: :btree
   add_index "users", ["geozone_id"], name: "index_users_on_geozone_id", using: :btree
   add_index "users", ["hidden_at"], name: "index_users_on_hidden_at", using: :btree
   add_index "users", ["password_changed_at"], name: "index_users_on_password_changed_at", using: :btree

@@ -96,6 +96,7 @@ feature 'Managed User' do
       click_link 'Create a new account'
 
       fill_in 'user_username', with: 'pepe'
+      fill_in 'user_personal_number', with: '195704139268'
       fill_in 'user_email', with: 'pepe@gmail.com'
 
       click_button 'Create user'
@@ -124,6 +125,7 @@ feature 'Managed User' do
       click_link 'Create a new account'
 
       fill_in 'user_username', with: 'peppa'
+      fill_in 'user_personal_number', with: '195704139269'
       fill_in 'user_email', with: ''
 
       click_button 'Create user'

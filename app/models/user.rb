@@ -36,8 +36,7 @@ class User < ActiveRecord::Base
 
   validates :username, presence: true, if: :username_required?
   validates :username, uniqueness: { scope: :registering_with_oauth }, if: :username_required?
-  validates :personal_number, presence: true, if: :personal_number_required?
-  validates :personal_number, uniqueness: true, if: :personal_number_required?
+  validates :personal_number, uniqueness: true, allow_nil: true
   validates :document_number, uniqueness: { scope: :document_type }, allow_nil: true
 
   validate :validate_username_length
@@ -274,10 +273,6 @@ class User < ActiveRecord::Base
     !organization? && !erased?
   end
 
-  def personal_number_required?
-    !organization? && !erased?
-  end
-
   def email_required?
     !erased? && unverified?
   end
@@ -364,13 +359,11 @@ class User < ActiveRecord::Base
     end
 
     def validate_personal_number_length
-      if personal_number_required?
-        validator = ActiveModel::Validations::LengthValidator.new(
-          attributes: :personal_number,
-          minimum: User.personal_number_min_length,
-          maximum: User.personal_number_max_length)
-        validator.validate(self)
-      end
+      validator = ActiveModel::Validations::LengthValidator.new(
+        attributes: :personal_number,
+        minimum: User.personal_number_min_length,
+        maximum: User.personal_number_max_length)
+      validator.validate(self)
     end
 
 end
