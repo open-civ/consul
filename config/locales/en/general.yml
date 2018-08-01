@@ -33,6 +33,7 @@ en:
       user_permission_verify_info: "* Only for users on Census."
       user_permission_votes: Participate on final voting
       username_label: Username
+      personal_number_label: Personal number
       verified_account: Account verified
       verify_my_account: Verify my account
   application:

@@ -26,6 +26,10 @@
 
       <%= f.invisible_captcha :family_name %>
 
+      <%= f.text_field :personal_number, minLength: User.personal_number_min_length,
+                                         maxlength: User.personal_number_max_length,
+                                         placeholder: t("devise_views.users.registrations.new.personnummer_label") %>
+
       <%= f.email_field :email,     placeholder: t("devise_views.users.registrations.new.email_label") %>
 
 

@@ -4,7 +4,7 @@ section "Creating Users" do
     User.create!(
       username:               username,
       date_of_birth:          date_of_birth,
-      personnummer:           unique_personnummer,
+      personal_number:        unique_personal_number,
       email:                  email,
       password:               password,
       password_confirmation:  password,
@@ -26,7 +26,7 @@ section "Creating Users" do
     @date
   end
 
-  def unique_personnummer
+  def unique_personal_number
     @number = Faker::Number.between(1000, 9999)
     "#{@date.strftime("%Y%m%d")}#{@number}"
   end
