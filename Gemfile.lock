@@ -63,6 +63,14 @@ GEM
     ast (2.4.0)
     autoprefixer-rails (8.2.0)
       execjs
+    aws-sdk (2.11.101)
+      aws-sdk-resources (= 2.11.101)
+    aws-sdk-core (2.11.101)
+      aws-sigv4 (~> 1.0)
+      jmespath (~> 1.0)
+    aws-sdk-resources (2.11.101)
+      aws-sdk-core (= 2.11.101)
+    aws-sigv4 (1.0.3)
     babel-source (5.8.35)
     babel-transpiler (0.7.0)
       babel-source (>= 4.0, < 6)
@@ -217,6 +225,7 @@ GEM
       railties (>= 3.1, < 6.0)
     invisible_captcha (0.10.0)
       rails (>= 3.2.0)
+    jmespath (1.4.0)
     jquery-fileupload-rails (0.4.7)
       actionpack (>= 3.1)
       railties (>= 3.1)
@@ -327,7 +336,7 @@ GEM
       arel (>= 6)
     powerpack (0.1.1)
     public_suffix (3.0.1)
-    puma (3.11.4)
+    puma (3.12.0)
     quiet_assets (1.1.0)
       railties (>= 3.1, < 5.0)
     rack (1.6.10)
@@ -513,6 +522,7 @@ DEPENDENCIES
   ahoy_matey (~> 1.6.0)
   ancestry (~> 3.0.1)
   autoprefixer-rails (~> 8.2.0)
+  aws-sdk (~> 2)
   browser (~> 2.5.2)
   bullet (~> 5.7.0)
   byebug (~> 10.0.0)
@@ -544,7 +554,7 @@ DEPENDENCIES
   graphiql-rails (~> 1.4.1)
   graphql (~> 1.7.8)
   groupdate (~> 3.2.0)
-  heroku-deflater
+  heroku-deflater (~> 0.6.3)
   i18n-tasks (~> 0.9.20)
   initialjs-rails (~> 0.2.0.5)
   invisible_captcha (~> 0.10.0)
@@ -566,7 +576,7 @@ DEPENDENCIES
   personnummer
   pg (~> 0.21.0)
   pg_search (~> 2.0.1)
-  puma
+  puma (~> 3.12.0)
   quiet_assets (~> 1.1.0)
   rails (= 4.2.10)
   rails-assets-leaflet!
