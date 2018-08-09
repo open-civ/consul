@@ -29,7 +29,7 @@ de:
         title: Titel
         description: Beschreibung
         target_url: Link
-        post_started_at: Eintrag veröffentlicht am
+        post_started_at: Veröffentlicht am
         post_ended_at: Eintrag beendet am
         sections_label: Abschnitte, in denen es angezeigt wird
         sections:
@@ -70,11 +70,11 @@ de:
           on_system_emails: E-mails vom System
         title: Aktivität der Moderator*innen
         type: Typ
-        no_activity: Hier sind keine Moderatoren/Moderatorinnen aktiv.
+        no_activity: Hier sind keine Moderator*innen aktiv.
     budgets:
       index:
         title: Bürgerhaushalte
-        new_link: Neues Budget erstellen
+        new_link: Neuen Bürgerhaushalt erstellen
         filter: Filter
         filters:
           open: Offen
@@ -86,9 +86,9 @@ de:
         table_edit_groups: Gruppierungen von Rubriken
         table_edit_budget: Bearbeiten
         edit_groups: Gruppierungen von Rubriken bearbeiten
-        edit_budget: Budget bearbeiten
+        edit_budget: Bürgerhaushalt bearbeiten
       create:
-        notice: Ein neuer Bürgerhaushalt wurde erfolgreich erstellt!
+        notice: Neuer Bürgerhaushalt erfolgreich erstellt!
       update:
         notice: Bürgerhaushalt erfolgreich aktualisiert
       edit:
@@ -103,37 +103,37 @@ de:
         blank_dates: Das Datumfeld ist leer
       destroy:
         success_notice: Bürgerhaushalt erfolgreich gelöscht
-        unable_notice: Sie können einen Bürgerhaushalt mit zugehörigem Ausgabenvorschlag nicht löschen
+        unable_notice: Ein Bürgerhaushalt mit zugehörigen Ausgabenvorschlägen kann nicht gelöscht werden
       new:
         title: Neuer Bürgerhaushalt
       show:
         groups:
-          one: 1 Gruppe von Budgetrubriken
-          other: "%{count} Gruppen von Budgetkategorien"
+          one: 1 Gruppe von Rubriken
+          other: "%{count} Gruppe von Rubriken"
       form:
         group: Name der Gruppe
-        no_groups: Bisher wurden noch keine Gruppen erstellt. Jede*r Benutzer*in darf nur in einer Rubrik per Gruppe wählen.
+        no_groups: Bisher wurden noch keine Gruppen erstellt. Jede*r Benutzer*in darf in nur einer Rubrik per Gruppe abstimmen.
         add_group: Neue Gruppe hinzufügen
         create_group: Gruppe erstellen
         edit_group: Gruppe bearbeiten
         submit: Gruppe speichern
         heading: Name der Rubrik
         add_heading: Rubrik hinzufügen
-        amount: Menge
+        amount: Summe
         population: "Bevölkerung (optional)"
         population_help_text: "Diese Daten dienen ausschließlich dazu, die Beteiligungsstatistiken zu berechnen"
         save_heading: Rubrik speichern
-        no_heading: Diese Gruppe hat noch keine zugewiesene Rubrik.
+        no_heading: Diese Gruppe hat noch keine zugeordnete Rubrik.
         table_heading: Rubrik
         table_amount: Summe
         table_population: Bevölkerung
-        population_info: "Das Feld 'Bevölkerung' in den Budgetrubriken wird nur für statistische Zwecke verwendet mit dem Ziel, den Prozentsatz der Stimmen in jeder Rubrik anzuzeigen, die ein Bevölkerungsgebiet darstellt. Es ist ein optionales Feld, daher können Sie es leer lassen, wenn es nicht zutrifft."
-        max_votable_headings: "Maximale Anzahl von Rubriken, in der ein Nutzer abstimmen kann"
+        population_info: "Das Feld 'Bevölkerung' in den Rubriken wird nur für statistische Zwecke verwendet, mit dem Ziel, den Prozentsatz der Stimmen in jeder Rubrik anzuzeigen, die ein Bevölkerungsgebiet darstellt. Dieses Feld ist optional; Sie können es daher leer lassen, wenn es nicht zutrifft."
+        max_votable_headings: "Maximale Anzahl von Rubriken, in der ein*e Benutzer*in abstimmen kann"
         current_of_max_headings: "%{current} von %{max}"
       winners:
-        calculate: Meistbewertete Budgetvorschläge berechnen
-        calculated: Die Gewinner werden ermittelt, es kann einen Moment dauern.
-        recalculate: Meistbewertete Budgetvorschläge neu berechnen
+        calculate: Bestbewertete Vorschläge ermitteln
+        calculated: Die bestbewerteten Vorschläge werden ermittelt. Dies kann einen Moment dauern.
+        recalculate: Bestbewertete Vorschläge neu ermitteln
     budget_phases:
       edit:
         start_date: Anfangsdatum
@@ -143,7 +143,7 @@ de:
         description: Beschreibung
         description_help_text: Dieser Text erscheint in der Kopfzeile, wenn die Phase aktiv ist
         enabled: Phase aktiviert
-        enabled_help_text: Diese Phase wird öffentlich in der Zeitleiste der Budgetphasen angezeigt und ist auch für andere Zwecke aktiv
+        enabled_help_text: Diese Phase wird öffentlich in der Zeitleiste der Phasen des Bürgerhaushalts angezeigt und ist auch für andere Zwecke aktiv
         save_changes: Änderungen speichern
     budget_investments:
       index:
@@ -162,25 +162,25 @@ de:
           all: Alle
           without_admin: Ohne zugewiesene*n Administrator*in
           without_valuator: Ohne zugewiesene*n Begutachter*in
-          under_valuation: In der Bewertungsphase
-          valuation_finished: Bewertung beendet
+          under_valuation: In Begutachtung
+          valuation_finished: Begutachtung abgeschlossen
           feasible: Durchführbar
           selected: Ausgewählt
           undecided: Offen
           unfeasible: Undurchführbar
           min_total_supports: Minimum Unterstützer*innen
-          winners: Gewinner
+          winners: Bestbewertete Vorschläge
           one_filter_html: "Verwendete Filter: <b><em>%{filter}</em></b>"
           two_filters_html: "Verwendete Filter: <b><em>%{filter},%{advanced_filters}</em></b>"
         buttons:
           filter: Filter
-        download_current_selection: "Download der aktuellen Auswahl"
+        download_current_selection: "Aktuelle Auswahl herunterladen"
         no_budget_investments: "Keine Ausgabenvorschläge vorhanden."
         title: Ausgabenvorschläge
         assigned_admin: Zugewiesene*r Administrator*in
         no_admin_assigned: Kein*e Administrator*in zugewiesen
-        no_valuators_assigned: Keine Begutacher*innen zugewiesen
-        no_valuation_groups: Keine Bewertungsgruppen zugewiesen
+        no_valuators_assigned: Kein*e Begutacher*in zugewiesen
+        no_valuation_groups: Keine Begutachtungsgruppe zugewiesen
         feasibility:
           feasible: "Durchführbar (%{price})"
           unfeasible: "Undurchführbar"
@@ -193,13 +193,13 @@ de:
           supports: Unterstützer*innen
           admin: Administrator*in
           valuator: Begutachter*in
-          valuation_group: Bewertungsgruppe
-          geozone: Tätigkeitsbereich
+          valuation_group: Begutachtungsgruppe
+          geozone: Tätigkeitsfeld
           feasibility: Durchführbarkeit
-          valuation_finished: Val. Fin.
+          valuation_finished: Begutachtung abgeschlossen
           selected: Ausgewählt
           visible_to_valuators: Den Begutachter*innen zeigen
-          author_username: Benutzer*name des*r Verfasser*in
+          author_username: Benutzer*innenname des/der Verfasser*in
           incompatible: Inkompatibel
         cannot_calculate_winners: Das Budget muss in einer der Phasen "Finale Abstimmung", "Abstimmung beendet" oder "Ergebnisse" stehen, um Gewinnervorschläge berechnen zu können
         see_results: "Ergebnisse anzeigen"
@@ -217,8 +217,8 @@ de:
         dossier: Bericht
         edit_dossier: Bericht bearbeiten
         tags: Tags
-        user_tags: Benutzer*tags
-        undefined: Nicht definiert
+        user_tags: Benutzer*innentags
+        undefined: Undefiniert
         milestone: Meilenstein
         new_milestone: Neuen Meilenstein erstellen
         compatibility:
@@ -239,7 +239,7 @@ de:
         documents: "Dokumente"
         see_documents: "Dokumente anzeigen (%{count})"
         no_documents: "Ohne Dokumente"
-        valuator_groups: "Bewertungsgruppen"
+        valuator_groups: "Begutachtungsgruppen"
       edit:
         classification: Klassifizierung
         compatibility: Kompatibilität
@@ -247,14 +247,14 @@ de:
         selection: Auswahl
         mark_as_selected: Als ausgewählt markieren
         assigned_valuators: Begutachter*innen
-        select_heading: Wählen Sie eine Rubrik
+        select_heading: Rubrik auswählen
         submit_button: Aktualisieren
-        user_tags: Benutzerzugewiesene Tags
+        user_tags: Tags, die von Benutzer*innen zugewiesen wurden
         tags: Tags
         tags_placeholder: "Geben Sie die gewünschten Tags durch Kommas (,) getrennt ein"
-        undefined: Nicht definiert
+        undefined: Undefiniert
         user_groups: "Gruppen"
-      search_unfeasible: Suchen Sie nicht durchführbar
+      search_unfeasible: Suche undurchführbar
     milestones:
       index:
         table_id: "Ausweis"
@@ -271,8 +271,8 @@ de:
       form:
         add_language: Sprache hinzufügen
         remove_language: Sprache entfernen
-        admin_statuses: Status der Ausgabenvorschläge verwalten
-        no_statuses_defined: Kein definierter Status der Ausgabenvorschläge bislang vorhanden
+        admin_statuses: Status des Ausgabenvorschlags verwalten
+        no_statuses_defined: Es wurde noch kein Status für diese Ausgabenvorschläge definiert
       new:
         creating: Meilenstein erstellen
         date: Datum
@@ -288,8 +288,8 @@ de:
     statuses:
       index:
         title: Status der Ausgabenvorschläge
-        empty_statuses: Es wurden noch kein Status für Ausgabenvorschläge erstellt
-        new_status: Neuen Status för Ausgabenvorschläge erstellen
+        empty_statuses: Es wurde noch kein Status für Ausgabenvorschläge definiert
+        new_status: Neuen Status für Ausgabenvorschlag erstellen
         table_name: Name
         table_description: Beschreibung
         table_actions: Aktionen
@@ -320,7 +320,7 @@ de:
       index:
         back: Zurück zu %{org}
         title: Administration
-        description: Herzlich Willkommen auf dem %{org}-Admin-Panel.
+        description: Willkommen auf dem Admin-Panel für %{org}.
     debates:
       index:
         filter: Filter
@@ -339,7 +339,7 @@ de:
           without_confirmed_hide: Ausstehend
         title: Verborgene Benutzer*innen
         user: Benutzer*in
-        no_hidden_users: Keine verborgenen Benutzer*innen vorhanden.
+        no_hidden_users: Es gibt keine verborgenen Benutzer*innen.
       show:
         email: 'E-Mail:'
         hidden_at: 'Verborgen am:'
@@ -352,8 +352,8 @@ de:
           all: Alle
           with_confirmed_hide: Bestätigt
           without_confirmed_hide: Ausstehend
-        title: Verborgene Budgetvorschläge
-        no_hidden_budget_investments: Keine verborgenen Budgetvorschkäge vorhanden
+        title: Verborgene Vorschläge
+        no_hidden_budget_investments: Es gibt keine verborgenen Vorschläge
     legislation:
       processes:
         create:
@@ -375,7 +375,7 @@ de:
           process: Verfahren
           debate_phase: Diskussionsphase
           allegations_phase: Entwurfsphase
-          proposals_phase: Phase für Vorschläge
+          proposals_phase: Vorschlagsphase
           start: Beginn
           end: Ende
           use_markdown: Verwenden Sie Markdown, um den Text zu formatieren
@@ -525,7 +525,7 @@ de:
       hidden_debates: Verborgene Diskussionen
       hidden_proposals: Verborgene Vorschläge
       hidden_budget_investments: Verborgene Ausgabenvorschläge
-      hidden_proposal_notifications: Benachrichtigungen zu verborgenen Vorschlägen
+      hidden_proposal_notifications: Verborgene Benachrichtigungen
       hidden_users: Verborgene Benutzer*innen
       administrators: Administrator*innen
       managers: Manager*innen
@@ -549,29 +549,29 @@ de:
       signature_sheets: Unterschriftenbögen
       site_customization:
         homepage: Homepage
-        pages: Custom pages
-        images: Custom images
+        pages: Meine Seiten
+        images: Benutzer*innenbilder
         content_blocks: Benutzer*spezifische Inhaltsdatenblöcke
         information_texts: Custom information texts
         information_texts_menu:
-          debates: "Debates"
+          debates: "Diskussionen"
           community: "Community"
-          proposals: "Proposals"
-          polls: "Polls"
+          proposals: "Vorschläge"
+          polls: "Abstimmungen"
           layouts: "Layouts"
-          mailers: "Emails"
-          management: "Management"
+          mailers: "E-Mails"
+          management: "Verwaltung"
           guides: "Guides"
-          welcome: "Welcome"
+          welcome: "Willkommen"
         buttons:
-          save: "Save"
+          save: "Speichern"
       title_moderated_content: Moderierter Inhalt
-      title_budgets: Budgets
+      title_budgets: Bürger*innenhaushalte
       title_polls: Abstimmungen
       title_profiles: Profile
       title_settings: Einstellungen
       title_site_customization: Seiteninhalt
-      title_booths: Wahlurnen
+      title_booths: Wahlkabinen
       legislation: Kollaborative Gesetzgebung
       users: Benutzer*innen
     administrators:
@@ -681,7 +681,7 @@ de:
         preview_of: Vorschau von %{name}
         pending_to_be_sent: This is the content pending to be sent
         moderate_pending: Moderate notification send
-        send_pending: Send pending
+        send_pending: Ausstehendes senden
         send_pending_notification: Pending notifications sent succesfully
       proposal_notification_digest:
         title: Proposal Notification Digest
@@ -701,7 +701,7 @@ de:
         description: Beschreibung
         no_description: Ohne Beschreibung
         no_valuators: Keine Begutachter*innen vorhanden.
-        valuator_groups: "Bewertungsgruppen"
+        valuator_groups: "Begutachtungsgruppen"
         group: "Gruppe"
         no_group: "Ohne Gruppe"
       valuator:
@@ -710,10 +710,10 @@ de:
       search:
         title: 'Begutachter*innen: Benutzer*innensuche'
       summary:
-        title: Zusammenfassung der Bewertungen der Ausgabenvorschläge
+        title: Begutachter*innen-Zusammenfassung der Ausgabenvorschläge
         valuator_name: Begutachter*in
         finished_and_feasible_count: Abgeschlossen und durchführbar
-        finished_and_unfeasible_count: Abgeschlossen und nicht durchführbar
+        finished_and_unfeasible_count: Abgeschlossen und undurchführbar
         finished_count: Abgeschlossen
         in_evaluation_count: In Auswertung
         total_count: Gesamt
@@ -747,7 +747,7 @@ de:
         title: Vorsitzende der Abstimmung
       officer:
         add: Hinzufügen
-        delete: Position löschen
+        delete: Amt löschen
         name: Name
         email: E-Mail
         entry_name: Wahlvorsteher*in
@@ -1267,7 +1267,7 @@ de:
         roles: Rollen
         verification_level: Überprüfungsstatus
       index:
-        title: Benutzer*in
+        title: Benutzer*innen
         no_users: Keine Benutzer*innen vorhanden.
       search:
         placeholder: Suche Benutzer*in nach E-Mail, Name oder Ausweis suchen
@@ -1337,7 +1337,7 @@ de:
         index:
           create: Neue Seite erstellen
           delete: Seite löschen
-          title: Benutzer*definierte Seiten
+          title: Meine Seiten
           see_page: Seite anzeigen
         new:
           title: Neue benutzer*definierte Seite erstellen
