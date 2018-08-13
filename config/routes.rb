@@ -5,7 +5,9 @@ Rails.application.routes.draw do
     get '/sandbox/*template' => 'sandbox#show'
   end
 
-  mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
+  if Rails.application.secrets.delivery_method.to_sym == :letter_opener
+    mount LetterOpenerWeb::Engine, at: "/letter_opener"
+  end
 
   draw :account
   draw :admin
