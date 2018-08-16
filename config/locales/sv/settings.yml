@@ -107,7 +107,7 @@ sv:
         recommendations_on_debates_description: "Shows users recommendations to users on the debates page based on the tags of the items followed"
         recommendations_on_proposals: "Rekommenderade förslag"
         recommendations_on_proposals_description: "Displays recommendations to users on the proposals page based on the tags of the items followed"
-      community: "Diskussion om budgetförslag"
+      community: "Gemenskap kring medborgarförslag och budgetförslag"
       community_description: "Enables the community section in the proposals and investment projects of the Participatory Budgets"
       map: "Geografisk plats för budgetförslag"
       map_description: "Enables geolocation of proposals and investment projects"
