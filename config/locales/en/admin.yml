@@ -269,8 +269,6 @@ en:
         show_image: "Show image"
         documents: "Documents"
       form:
-        add_language: Add language
-        remove_language: Remove language
         admin_statuses: Admin investment statuses
         no_statuses_defined: There are no defined investment statuses yet
       new:
@@ -374,7 +372,7 @@ en:
           enabled: Enabled
           process: Process
           debate_phase: Debate phase
-          allegations_phase: Drafting phase
+          allegations_phase: Comments phase
           proposals_phase: Proposals phase
           start: Start
           end: End
@@ -660,8 +658,10 @@ en:
         empty_notifications: There are no notifications to show
       new:
         section_title: New notification
+        submit_button: Create notification
       edit:
         section_title: Edit notification
+        submit_button: Update notification
       show:
         section_title: Notification preview
         send: Send notification
@@ -1306,6 +1306,11 @@ en:
         content_block:
           body: Body
           name: Name
+          names:
+            top_links: Top Links
+            footer: Footer
+            subnavigation_left: Main Navigation Left 
+            subnavigation_right: Main Navigation Right
       images:
         index:
           title: Custom images
@@ -1377,3 +1382,6 @@ en:
         submit_header: Save header
         card_title: Edit card
         submit_card: Save card
+    translations:
+        remove_language: Remove language
+        add_language: Add language

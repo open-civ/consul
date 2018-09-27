@@ -270,8 +270,6 @@ es:
         show_image: "Mostrar imagen"
         documents: "Documentos"
       form:
-        add_language: Añadir idioma
-        remove_language: Eliminar idioma
         admin_statuses: Gestionar estados de proyectos
         no_statuses_defined: No hay estados definidos
       new:
@@ -375,7 +373,7 @@ es:
           enabled: Habilitado
           process: Proceso
           debate_phase: Fase de debate
-          allegations_phase: Fase de redacción
+          allegations_phase: Fase de comentarios
           proposals_phase: Fase de propuestas
           start: Inicio
           end: Fin
@@ -661,8 +659,10 @@ es:
         empty_notifications: No hay notificaciones para mostrar
       new:
         section_title: Nueva notificación
+        submit_button: Crear notificación
       edit:
         section_title: Editar notificación
+        submit_button: Actualizar notificación
       show:
         section_title: Vista previa de notificación
         send: Enviar notificación
@@ -1307,6 +1307,11 @@ es:
         content_block:
           body: Contenido
           name: Nombre
+          names:
+            top_links: Enlaces superiores
+            footer: Pie de página
+            subnavigation_left: Navegación principal izquierda 
+            subnavigation_right: Navegación principal derecha
       images:
         index:
           title: Personalizar imágenes
@@ -1378,3 +1383,6 @@ es:
         submit_header: Guardar encabezado
         card_title: Editar tarjeta
         submit_card: Guardar tarjeta
+    translations:
+      add_language: Añadir idioma
+      remove_language: Eliminar idioma
