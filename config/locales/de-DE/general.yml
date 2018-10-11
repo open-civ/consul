@@ -387,7 +387,6 @@ de:
         help: Hilfe zu Vorschlägen
       section_footer:
         title: Hilfe zu Vorschlägen
-        description: Citizens' proposals are an opportunity for neighbours and collectives to decide directly how they want their city to be, after getting sufficient support and submitting to a citizens' vote.
     new:
       form:
         submit_button: Vorschlag erstellen
@@ -425,7 +424,6 @@ de:
       supports_necessary: "%{number} Unterstützungen benötigt"
       total_percent: 100 %
       archived: "Dieser Vorschlag wurde archiviert und nicht mehr unterstützt werden."
-      successful: "This proposal has reached the required supports."
     show:
       author_deleted: Benutzer gelöscht
       code: 'Antrags-Code:'
@@ -475,7 +473,6 @@ de:
         help: Hilfe zur Abstimmung
       section_footer:
         title: Hilfe zur Abstimmung
-        description: Citizens' polls are a participatory mechanism by which citizens with voting rights can make direct decisions
       no_polls: "Keine offenen Abstimmungen."
     show:
       already_voted_in_booth: "Sie haben bereits in einer physischen Wahlkabine teilgenommen. Sie können nicht nochmal teilnehmen."

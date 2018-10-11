@@ -82,7 +82,6 @@ de:
         key_dates: Die wichtigsten Termine
         debate_dates: Diskussion
         draft_publication_date: Veröffentlichungsentwurf
-        allegations_dates: Behauptungen
         result_publication_date: Veröffentlichung Endergebnis
         proposals_dates: Vorschläge
     questions:
@@ -120,4 +119,3 @@ de:
       form:
         tags_label: "Kategorien"
       not_verified: "Für Wahlvorschläge %{verify_account}."
-      closed: "Dieser Prozess wurde abgeschlossen und kann nicht mehr bewertet werden."

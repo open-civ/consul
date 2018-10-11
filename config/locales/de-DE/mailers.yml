@@ -11,7 +11,6 @@ de:
     email_verification:
       click_here_to_verify: diesen Link
       instructions_2_html: Diese E-Mail dient dazu Ihr Konto mit <b>%{document_type} %{document_number}</b>zu verifizieren. Wenn es sich hierbei nicht um Ihre Daten handelt, klicken Sie bitte nicht auf den vorherigen Link und ignorieren Sie diese E-Mail.
-      instructions_html: To complete the verification of your user account you must click %{verification_link}.
       subject: Bestätigen Sie Ihre E-Mail-Adresse
       thanks: Vielen Dank.
       title: Bestätigen Sie Ihr Konto über den folgenden Link
@@ -44,7 +43,6 @@ de:
       title_html: "Sie haben eine neue persönliche Nachricht versendet an <strong>%{receiver}</strong> mit dem Inhalt:"
     user_invite:
       ignore: "Wenn Sie diese Einladung nicht angefordert haben, können Sie diese E-Mail einfach ignorieren."
-      text: "Thank you for applying to join %{org}! In seconds you can start to participate, just fill the form below:"
       thanks: "Vielen Dank."
       title: "Willkommen zu %{org}"
       button: Registrierung abschließen

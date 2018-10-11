@@ -269,8 +269,6 @@ de:
         show_image: "Bild anzeigen"
         documents: "Dokumente"
       form:
-        add_language: Sprache hinzufügen
-        remove_language: Sprache entfernen
         admin_statuses: Status des Ausgabenvorschlags verwalten
         no_statuses_defined: Es wurde noch kein Status für diese Ausgabenvorschläge definiert
       new:
@@ -374,7 +372,6 @@ de:
           enabled: Aktiviert
           process: Verfahren
           debate_phase: Diskussionsphase
-          allegations_phase: Entwurfsphase
           proposals_phase: Vorschlagsphase
           start: Beginn
           end: Ende
@@ -411,12 +408,10 @@ de:
           proposals: Vorschläge
       proposals:
         index:
-          title: Vorschläge
           back: Zurück
         form:
           custom_categories: Kategorien
           custom_categories_description: Kategorien, die Benutzer*innen bei der Erstellung eines Vorschlags auswählen können.
-          custom_categories_placeholder: Enter the tags you would like to use, separated by commas (,) and between quotes ("")
       draft_versions:
         create:
           notice: 'Entwurf erfolgreich erstellt. <a href="%{link}">Zum Anzeigen hier klicken</a>'
@@ -552,7 +547,6 @@ de:
         pages: Meine Seiten
         images: Benutzer*innenbilder
         content_blocks: Benutzer*spezifische Inhaltsdatenblöcke
-        information_texts: Custom information texts
         information_texts_menu:
           debates: "Diskussionen"
           community: "Community"
@@ -679,12 +673,8 @@ de:
       preview_pending:
         action: Vorschau ausstehend
         preview_of: Vorschau von %{name}
-        pending_to_be_sent: This is the content pending to be sent
-        moderate_pending: Moderate notification send
         send_pending: Ausstehendes senden
-        send_pending_notification: Pending notifications sent succesfully
       proposal_notification_digest:
-        title: Proposal Notification Digest
         description: Sammelt alle Benachrichtigungen über Vorschläge für eine*n Benutzer*in in einer Nachricht, um mehrfache E-Mails zu vermeiden.
         preview_detail: Benutzer*innen erhalten nur Benachrichtigungen zu Vorschlägen, denen sie folgen
     emails_download:
@@ -1056,8 +1046,6 @@ de:
             update: Kartenkonfiguration erfolgreich aktualisiert.
           form:
             submit: Aktualisieren
-      setting: Feature
-      setting_actions: Actions
       setting_name: Einstellung
       setting_status: Status
       setting_value: Wert
@@ -1344,11 +1332,10 @@ de:
         page:
           created_at: Erstellt am
           status: Status
-          title: Titel
           updated_at: Letzte Aktualisierung
           status_draft: Entwurf
           status_published: Veröffentlicht
-          locale: Sprache
+          title: Titel
     homepage:
       title: Homepage
       description: Die aktiven Module erscheinen auf der Startseite in derselben Reihenfolge wie hier.
