@@ -6,6 +6,6 @@ class I18nContent < ActiveRecord::Base
   validates :key, uniqueness: true
 
   translates :value, touch: true
-  globalize_accessors locales: [:en, :es, :fr, :nl]
+  globalize_accessors locales: [:sv, :en, :de, :es, :fr, :nl, 'pt-BR']
 
 end
