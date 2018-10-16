@@ -422,13 +422,13 @@ ActiveRecord::Schema.define(version: 20180924071722) do
     t.string   "title"
     t.string   "attachment_file_name"
     t.string   "attachment_content_type"
-    t.integer  "attachment_file_size"
+    t.integer  "attachment_file_size",    limit: 8
     t.datetime "attachment_updated_at"
     t.integer  "user_id"
     t.integer  "documentable_id"
     t.string   "documentable_type"
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
+    t.datetime "created_at",                        null: false
+    t.datetime "updated_at",                        null: false
   end
 
   add_index "documents", ["documentable_type", "documentable_id"], name: "index_documents_on_documentable_type_and_documentable_id", using: :btree
@@ -524,7 +524,7 @@ ActiveRecord::Schema.define(version: 20180924071722) do
     t.datetime "updated_at",                         null: false
     t.string   "attachment_file_name"
     t.string   "attachment_content_type"
-    t.integer  "attachment_file_size"
+    t.integer  "attachment_file_size",    limit: 8
     t.datetime "attachment_updated_at"
     t.integer  "user_id"
   end
@@ -580,7 +580,7 @@ ActiveRecord::Schema.define(version: 20180924071722) do
     t.string   "locale",                       null: false
     t.datetime "created_at",                   null: false
     t.datetime "updated_at",                   null: false
-    t.text     "title"
+    t.string   "title"
     t.text     "changelog"
     t.text     "body"
     t.text     "body_html"
@@ -1151,29 +1151,29 @@ ActiveRecord::Schema.define(version: 20180924071722) do
   add_index "site_customization_content_blocks", ["name", "locale"], name: "index_site_customization_content_blocks_on_name_and_locale", unique: true, using: :btree
 
   create_table "site_customization_images", force: :cascade do |t|
-    t.string   "name",               null: false
+    t.string   "name",                         null: false
     t.string   "image_file_name"
     t.string   "image_content_type"
-    t.integer  "image_file_size"
+    t.integer  "image_file_size",    limit: 8
     t.datetime "image_updated_at"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
   end
 
   add_index "site_customization_images", ["name"], name: "index_site_customization_images_on_name", unique: true, using: :btree
 
   create_table "site_customization_page_translations", force: :cascade do |t|
-      t.integer  "site_customization_page_id", null: false
-      t.string   "locale",                     null: false
-      t.datetime "created_at",                 null: false
-      t.datetime "updated_at",                 null: false
-      t.string   "title"
-      t.string   "subtitle"
-      t.text     "content"
-    end
+    t.integer  "site_customization_page_id", null: false
+    t.string   "locale",                     null: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+    t.string   "title"
+    t.string   "subtitle"
+    t.text     "content"
+  end
 
-    add_index "site_customization_page_translations", ["locale"], name: "index_site_customization_page_translations_on_locale", using: :btree
-    add_index "site_customization_page_translations", ["site_customization_page_id"], name: "index_7fa0f9505738cb31a31f11fb2f4c4531fed7178b", using: :btree
+  add_index "site_customization_page_translations", ["locale"], name: "index_site_customization_page_translations_on_locale", using: :btree
+  add_index "site_customization_page_translations", ["site_customization_page_id"], name: "index_7fa0f9505738cb31a31f11fb2f4c4531fed7178b", using: :btree
 
   create_table "site_customization_pages", force: :cascade do |t|
     t.string   "slug",                                 null: false
@@ -1418,6 +1418,12 @@ ActiveRecord::Schema.define(version: 20180924071722) do
   add_index "votes", ["votable_id", "votable_type", "vote_scope"], name: "index_votes_on_votable_id_and_votable_type_and_vote_scope", using: :btree
   add_index "votes", ["voter_id", "voter_type", "vote_scope"], name: "index_votes_on_voter_id_and_voter_type_and_vote_scope", using: :btree
 
+  create_table "web_sections", force: :cascade do |t|
+    t.text     "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "widget_card_translations", force: :cascade do |t|
     t.integer  "widget_card_id", null: false
     t.string   "locale",         null: false
@@ -1448,12 +1454,6 @@ ActiveRecord::Schema.define(version: 20180924071722) do
     t.integer  "limit",      default: 3
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
-  end
-
-  create_table "web_sections", force: :cascade do |t|
-    t.text     "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   add_foreign_key "administrators", "users"
