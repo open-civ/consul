@@ -269,8 +269,6 @@ sv:
         show_image: "Visa bild"
         documents: "Dokument"
       form:
-        add_language: Lägg till språk
-        remove_language: Ta bort språk
         admin_statuses: Administrativ status för budgetförslag
         no_statuses_defined: Det finns ingen definierad status för budgetförslag än
       new:
@@ -374,7 +372,6 @@ sv:
           enabled: Aktiverad
           process: Process
           debate_phase: Diskussionsfas
-          allegations_phase: Utkastsfas
           proposals_phase: Förslagsfas
           start: Start
           end: Slut
@@ -411,12 +408,10 @@ sv:
           proposals: Förslag
       proposals:
         index:
-          title: Förslag
           back: Tillbaka
         form:
           custom_categories: Kategorier
           custom_categories_description: Kategorier som användare kan välja när de skapar förslaget.
-          custom_categories_placeholder: Enter the tags you would like to use, separated by commas (,) and between quotes ("")
       draft_versions:
         create:
           notice: 'Utkastet har skapats. <a href="%{link}">Klicka här för att visa det</a>'
@@ -664,7 +659,6 @@ sv:
         section_title: Redigera avisering
       show:
         section_title: Förhandsgranska avisering
-        send: Send notification
         will_get_notified: (%{n} användare kommer att meddelas)
         got_notified: (%{n} användare meddelades)
         sent_at: Skickat
@@ -1056,12 +1050,6 @@ sv:
             update: Kartinställningarna har uppdaterats.
           form:
             submit: Uppdatera
-      setting: Feature
-      setting_actions: Actions
-      setting_name: Setting
-      setting_status: Status
-      setting_value: Value
-      no_description: "No description"
     shared:
       booths_search:
         button: Sök
@@ -1344,11 +1332,10 @@ sv:
         page:
           created_at: Skapad
           status: Status
-          title: Titel
           updated_at: Uppdaterad
           status_draft: Utkast
           status_published: Publicerad
-          locale: Språk
+          title: Titel
     homepage:
       title: Startsida
       description: De aktiva modulerna visas på startsidan i samma ordning som här.
