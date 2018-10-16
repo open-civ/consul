@@ -372,6 +372,7 @@ sv:
           enabled: Aktiverad
           process: Process
           debate_phase: Diskussionsfas
+          allegations_phase: Comments phase
           proposals_phase: Förslagsfas
           start: Start
           end: Slut
@@ -383,7 +384,7 @@ sv:
         index:
           create: Ny process
           delete: Ta bort
-          title: Planeringsprocesser
+          title: Dialoger
           filters:
             open: Pågående
             next: Kommande
@@ -391,8 +392,14 @@ sv:
             all: Alla
         new:
           back: Tillbaka
-          title: Skapa en ny kollaborativ planeringsprocess
+          title: Skapa en ny medborgardialog
           submit_button: Skapa process
+        proposals:
+          select_order: Sort by
+          orders:
+            id: Id
+            title: Title
+            supports: Supports
         process:
           title: Process
           comments: Kommentarer
@@ -408,10 +415,16 @@ sv:
           proposals: Förslag
       proposals:
         index:
+          title: Title
           back: Tillbaka
+          id: Id
+          supports: Supports
+          select: Select
+          selected: Selected
         form:
           custom_categories: Kategorier
           custom_categories_description: Kategorier som användare kan välja när de skapar förslaget.
+          custom_categories_placeholder: Enter the tags you would like to use, separated by commas (,) and between quotes ("")
       draft_versions:
         create:
           notice: 'Utkastet har skapats. <a href="%{link}">Klicka här för att visa det</a>'
@@ -567,7 +580,7 @@ sv:
       title_settings: Inställningar
       title_site_customization: Webbplatsens innehåll
       title_booths: Röststationer
-      legislation: Planeringsprocesser
+      legislation: Medborgardialoger
       users: Användare
     administrators:
       index:
@@ -655,10 +668,13 @@ sv:
         empty_notifications: Det finns inga aviseringar att visa
       new:
         section_title: Ny avisering
+        submit_button: Create notification
       edit:
         section_title: Redigera avisering
+        submit_button: Update notification
       show:
         section_title: Förhandsgranska avisering
+        send: Send notification
         will_get_notified: (%{n} användare kommer att meddelas)
         got_notified: (%{n} användare meddelades)
         sent_at: Skickat
@@ -1029,7 +1045,7 @@ sv:
         no_hidden_proposals: Det finns inga dolda aviseringar.
     settings:
       flash:
-        updated: Uppdaterad kostnadsberäkning
+        updated: Uppdaterat
       index:
         banners: Bannerformat
         banner_imgs: Banner
@@ -1050,6 +1066,12 @@ sv:
             update: Kartinställningarna har uppdaterats.
           form:
             submit: Uppdatera
+      setting: Feature
+      setting_actions: Actions
+      setting_name: Setting
+      setting_status: Status
+      setting_value: Value
+      no_description: "No description"
     shared:
       booths_search:
         button: Sök
@@ -1294,6 +1316,11 @@ sv:
         content_block:
           body: Innehåll
           name: Namn
+          names:
+            top_links: Top Links
+            footer: Footer
+            subnavigation_left: Main Navigation Left
+            subnavigation_right: Main Navigation Right
       images:
         index:
           title: Anpassade bilder
@@ -1336,6 +1363,7 @@ sv:
           status_draft: Utkast
           status_published: Publicerad
           title: Titel
+          slug: Slug
     homepage:
       title: Startsida
       description: De aktiva modulerna visas på startsidan i samma ordning som här.
@@ -1364,3 +1392,6 @@ sv:
         submit_header: Spara sidhuvud
         card_title: Redigera kort
         submit_card: Spara kort
+    translations:
+      remove_language: Remove language
+      add_language: Add language
