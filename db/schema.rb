@@ -422,13 +422,13 @@ ActiveRecord::Schema.define(version: 20180924071722) do
     t.string   "title"
     t.string   "attachment_file_name"
     t.string   "attachment_content_type"
-    t.integer  "attachment_file_size",    limit: 8
+    t.integer  "attachment_file_size"
     t.datetime "attachment_updated_at"
     t.integer  "user_id"
     t.integer  "documentable_id"
     t.string   "documentable_type"
-    t.datetime "created_at",                        null: false
-    t.datetime "updated_at",                        null: false
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
   end
 
   add_index "documents", ["documentable_type", "documentable_id"], name: "index_documents_on_documentable_type_and_documentable_id", using: :btree
@@ -524,7 +524,7 @@ ActiveRecord::Schema.define(version: 20180924071722) do
     t.datetime "updated_at",                         null: false
     t.string   "attachment_file_name"
     t.string   "attachment_content_type"
-    t.integer  "attachment_file_size",    limit: 8
+    t.integer  "attachment_file_size"
     t.datetime "attachment_updated_at"
     t.integer  "user_id"
   end
@@ -1151,13 +1151,13 @@ ActiveRecord::Schema.define(version: 20180924071722) do
   add_index "site_customization_content_blocks", ["name", "locale"], name: "index_site_customization_content_blocks_on_name_and_locale", unique: true, using: :btree
 
   create_table "site_customization_images", force: :cascade do |t|
-    t.string   "name",                         null: false
+    t.string   "name",               null: false
     t.string   "image_file_name"
     t.string   "image_content_type"
-    t.integer  "image_file_size",    limit: 8
+    t.integer  "image_file_size"
     t.datetime "image_updated_at"
-    t.datetime "created_at",                   null: false
-    t.datetime "updated_at",                   null: false
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
   end
 
   add_index "site_customization_images", ["name"], name: "index_site_customization_images_on_name", unique: true, using: :btree

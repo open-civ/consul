@@ -570,7 +570,6 @@ en:
           layouts: "Layouts"
           mailers: "Emails"
           management: "Management"
-          guides: "Guides"
           welcome: "Welcome"
         buttons:
           save: "Save"
@@ -642,6 +641,9 @@ en:
         title: Newsletter preview
         send: Send
         affected_users: (%{n} affected users)
+        sent_emails:
+          one: 1 email sent
+          other: "%{count} emails sent"
         sent_at: Sent at
         subject: Subject
         segment_recipient: Recipients
@@ -1320,7 +1322,7 @@ en:
           names:
             top_links: Top Links
             footer: Footer
-            subnavigation_left: Main Navigation Left 
+            subnavigation_left: Main Navigation Left
             subnavigation_right: Main Navigation Right
       images:
         index:

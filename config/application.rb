@@ -19,11 +19,25 @@ module Consul
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
-    config.i18n.default_locale = :sv
-    config.i18n.available_locales = [:sv, :en, :de, :es, :fr, :nl, 'pt-BR']
-    config.i18n.fallbacks = {'sv' => 'en', 'de' => 'en', 'fr' => 'en', 'pt-br' => 'es', 'nl' => 'en'}
+    config.i18n.default_locale = :en
+    available_locales = [
+      "sv",
+      "en",
+      "de",
+      "es",
+      "fr"
+    ]
+    config.i18n.available_locales = available_locales
+    config.i18n.fallbacks = {
+      'sv'    => 'en',
+      'de'    => 'en',
+      'es'    => 'en',
+      'fr'    => 'en',
+    }
     config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
     config.i18n.load_path += Dir[Rails.root.join('config', 'locales', 'custom', '**', '*.{rb,yml}')]
+
+    config.after_initialize { Globalize.set_fallbacks_to_all_available_locales }
 
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
 
@@ -32,7 +46,7 @@ module Consul
 
     # Add lib to the autoload path
     config.autoload_paths << Rails.root.join('lib')
-    config.time_zone = 'Madrid'
+    config.time_zone = 'Stockholm'
     config.active_job.queue_adapter = :delayed_job
 
     # CONSUL specific custom overrides

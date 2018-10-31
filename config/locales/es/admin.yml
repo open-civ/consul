@@ -563,7 +563,6 @@ es:
           community: "Comunidad"
           proposals: "Propuestas"
           polls: "Votaciones"
-          layouts: "Plantillas"
           mailers: "Correos"
           management: "Gestión"
           guides: "Guías"
@@ -638,6 +637,9 @@ es:
         title: Vista previa de newsletter
         send: Enviar
         affected_users: (%{n} usuarios afectados)
+        sent_emails:
+          one: 1 correo enviado
+          other: "%{count} correos enviados"
         sent_at: Enviado
         subject: Asunto
         segment_recipient: Destinatarios
@@ -1315,7 +1317,7 @@ es:
           names:
             top_links: Enlaces superiores
             footer: Pie de página
-            subnavigation_left: Navegación principal izquierda 
+            subnavigation_left: Navegación principal izquierda
             subnavigation_right: Navegación principal derecha
       images:
         index:
