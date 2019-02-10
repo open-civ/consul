@@ -10,9 +10,6 @@ gem 'aws-sdk-s3', '~> 1'
 group :staging, :production do
   gem 'rails_12factor', '~> 0.0.3'
   gem 'heroku-deflater', '~> 0.6.3'
-  gem 'faker', '~> 1.8.7'
-  gem 'database_cleaner', '~> 1.6.1'
-  gem "workless", "~> 2.2.0"
 end
 
 group :test do
