@@ -4,11 +4,9 @@
 # * Spanish: https://github.com/consul/consul/blob/master/CUSTOMIZE_ES.md#gemfile
 #
 
-gem 'puma', '~> 3.12.0'
 gem 'aws-sdk-s3', '~> 1'
 
 group :staging, :production do
-  gem 'rails_12factor', '~> 0.0.3'
   gem 'heroku-deflater', '~> 0.6.3'
 end
 
