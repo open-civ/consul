@@ -30,7 +30,7 @@ fr:
       user_permission_support_proposal: Soutenir des propositions
       user_permission_title: Participation
       user_permission_verify: Réaliser toutes ces actions %{verify}.
-      user_permission_verify_info: "* Uniquement pour les utilisateurs inscrits sur\nle recensement de Madrid"
+      user_permission_verify_info: "* Uniquement pour les utilisateurs inscrits sur\nle recensement "
       user_permission_votes: Participer au vote final
       username_label: Nom d'utilisateur
       verified_account: Compte vérifié
@@ -206,10 +206,10 @@ fr:
       consul_url: https://github.com/consul/consul
       contact_us: Pour l'assistance technique visitez la
       copyright: Consul, %{year}
-      description: Ce portail utiliser %{consul} qui est %{open_source}. De Madrid ouvert sur le monde.
+      description: Ce portail utiliser %{consul} qui est %{open_source}. 
       open_source: logiciel libre
       open_source_url: http://www.gnu.org/licenses/agpl-3.0.html
-      participation_text: Modelez la ville de Madrid dans laquelle vous souhaitez vivre
+      participation_text: Modelez la ville dans laquelle vous souhaitez vivre
       participation_title: Participation
       privacy: Vie privée
     header:
@@ -805,7 +805,7 @@ fr:
       user_permission_proposal: Créer des propositions
       user_permission_support_proposal: Soutenir des propositions
       user_permission_verify: Réaliser toutes ces actions %{verify}.
-      user_permission_verify_info: "* Uniquement pour les utilisateurs inscrits sur\nle recensement de Madrid"
+      user_permission_verify_info: "* Uniquement pour les utilisateurs inscrits sur\nle recensement "
       user_permission_verify_my_account: Vérifier mon compte
       user_permission_votes: Participer au vote final
   invisible_captcha:
