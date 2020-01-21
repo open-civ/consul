@@ -206,7 +206,7 @@ fr:
       consul_url: https://github.com/consul/consul
       contact_us: Pour l'assistance technique visitez la
       copyright: Consul, %{year}
-      description: Ce portail utiliser %{consul} qui est %{open_source}. 
+      description: Ce portail utilise l' %{consul} qui est un %{open_source}. 
       open_source: logiciel libre
       open_source_url: http://www.gnu.org/licenses/agpl-3.0.html
       participation_text: Modelez la ville dans laquelle vous souhaitez vivre
